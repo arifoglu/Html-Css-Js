@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html practice</title>
+</head>
+
+<body style="background-color: rgb(249, 236, 216);">
+
+    <style>
+        a:link {
+            color: greenyellow;
+        }
+
+        a:visited {
+            color: burlywood;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+
+    <a href="https://www.swisscom.ch/fr/clients-prives.html">swisscom</a>
+    <a href="https://www.salt.ch/en">salt</a>
+    <br>
+    <br>
+    <br>
+
+    <h1>This line was written by me</h1>
+    <hr>
+    <p>My first paragraph</p>
+    <h1 style="color: #796c6c; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">heading 1</h1>
+    <h2 style="color: rgb(34, 22, 22); font-family: Arial, Helvetica, sans-serif; text-align:right;">heading2</h2>
+    <h3 style="color: rgb(57, 31, 31); font-size: 150%;">heading3</h3>
+    <h4 style="color: rgb(24, 86, 86); text-align: center;">heading4</h4>
+    <h6 style="color: rgb(58, 19, 19); text-align: center;">heading6</h6>
+
+
+
+
+
+    <!-- I added google image inside to the link  -->
+    <!-- you should use target attribute to open your page at the different page -->
+
+    <a href="https://www.google.com/" target="_blank"><img
+            src="/images/google-icon-isolated-3d-render-illustration_47987-9777.avif" alt="logo of google" width="45"
+            height="35"></a>
+
+
+
+    <!-- link of the nestle was written single quote -->
+    <a href='/https://www.nestle.com/'><img src="/images/nestle.png" alt="" width="45" height="45"></a>
+    <br>
+
+
+
+
+    <p style="color: rgb(153, 116, 67);">
+        <em>Lorem</em> ipsum dolor sit amet,
+        consectetur <b>adipisicing</b> <small>elit</small>.
+        Et, voluptatum consequatur?
+        <i>Error</i> aliquid quis unde obcaecati!
+        Fugit nisi harum, perspiciatis
+        unde fugiat laudantium <mark><del>dicta</del><ins>dicte</ins></ins><sub>this word was written wrongly and then
+                it was deleted</sub></mark> ut
+        voluptas aperiam,
+        <strong>culpa praesentium dolorum!</strong>
+    </p>
+
+    <!-- this property was added as a internal css -->
+
+    <style>
+        p#second {
+            border: 2px solid;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        p#third {
+            margin-left: 25px;
+        }
+    </style>
+
+    <p id="second" style="background-color: #796c6c;">second parapgraph</p>
+    <p id="third" style="background-color: #696c6c;">third parapgraph</p>
+
+    <p id="try">
+        <img src="./images/Sunrise_2022.svg" alt="" width="25px" style="float: right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Repellat, architecto aliquid cum temporibus deserunt maxime possimus
+        vitae suscipit accusantium atque ipsum cumque culp
+        a quasi hic aperiam assumenda fugiat quis eius?
+    </p>
+
+    <p style="background-image: url('/images/nestle.png');">this picture was added as a background image</p>
+
+
+    <!--Thanks to tag <pre> these lines respectedly sorted  -->
+    <pre>
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        Et, voluptatum consequatur?
+        Error aliquid quis unde obcaecati!
+       </pre>
+    <hr>
+    <!-- this tag is interesting -->
+    <bdo dir="rtl">i am using this tag first time</bdo>
+    <hr>
+
+
+    <table style="width: 10%; border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">name</th>
+            <th style="border: 1px solid black;">surname</th>
+            <th style="border: 1px solid black;">age</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">john</td>
+            <td style="border: 1px solid black;">walker</td>
+            <td style="border: 1px solid black;">34</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">will</td>
+            <td style="border: 1px solid black;">tomas</td>
+            <td style="border: 1px solid black;">24</td>
+        </tr>
+    </table>
+
+
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: blanchedalmond;
+            border-style: double;
+            border-color: gray;
+            padding: 10px;
+
+
+        }
+
+        /* border collapse use for  eliminate different border */
+    </style>
+    <table style="width: 50%; ">
+        <caption>informations</caption>
+        <tr style=" height:50px;">
+            <th style="width: 51%;">person</th>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>jack</td>
+            <td>nol</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>john</td>
+            <td>john</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table style="width:30%">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Hillary</td>
+            <td>advanced web</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>operating system</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Lary</td>
+            <td>advanced web</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>operating system</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <div id="table" style="display: flex;">
+        <table style="width:20%;">
+
+            <tr>
+                <th colspan="2">name</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+
+        </table>
+
+        <br>
+
+        <table style="width:20%;">
+            <tr>
+                <th rowspan="2">april</th>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+
+    </div>
+
+    <ul style="list-style:square;">
+        <li>apple</li>
+        <li>orange</li>
+        <li>banane</li>
+    </ul>
+    <ol>
+        <li>lausanne</li>
+        <li>pully</li>
+        <li>lutry</li>
+    </ol>
+
+    <p>this line is a <span style="color:thistle;"> block</span> element</p>
+
+<br>
+
+<form >
+    <label for="fname">firstname</label><br>
+    <input type="text" id="fname" value=""><br>
+    <label for="fname">surname</label><br>
+    <input type="text" id="lname" value=""><br>
+    <input type="checkbox">
+    <label for="">html</label> 
+
+</form>
+
+
+
+
+    <!-- iframe is used to display one page at the same page inside -->
+
+    <iframe src="http://127.0.0.1:5500/w3schooltraining/indexw3schl.html" frameborder="0"></iframe>
+
+    <address>Chemin du Bochet 12 <br>
+        1014 Lausanne <br>
+        Vaud
+    </address>
+
+   <!-- script tag is used to on page for changing dynamicaly and efficient  -->
+    <button type="button" onclick="myFunction()">try</button>
+    <p id="demo">just</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "hello";
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.backgroundColor = "gray";
+        }
+        </script>
+
+</body>
+
+</html>

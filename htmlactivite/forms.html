@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h2>HTML Forms</h2>
+    <form action="" target="_blank" method="get" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="john"><br>
+
+        <label for="lastname">last name:</label><br>
+        <input type="text" id="lastname" value="vol"><br>
+
+        <input type="radio" id="html" value="html">
+        <label for="html">html</label><br>
+
+        <input type="radio" name="css" id="css">
+        <label for="css">css</label><br><br>
+        <input type="reset"><br><br>
+
+
+        <input type="checkbox" id="vehicule">
+        <label for="vehicle">j'ai le vélo</label><br>
+
+
+        <input type="checkbox" id="vehicule">
+        <label for="vehicle">je n'ai pas de vélo</label><br><br>
+
+        <label for="email">email</label>
+        <input type="email" id="email">
+        <br><br>
+
+        <label for="cars">chosi le voiture</label><br>
+        <select name="cars" id="cars" size="2" multiple>
+            <option value="volvo">volvo</option>
+            <option value="bmw">bmw</option>
+            <option value="audi" selected>audi</option>
+        </select><br>
+
+        <textarea name="message" id="" cols="25" rows="5"></textarea><br><br>
+
+        <button type="button" onclick="alert('SALUT')">clique</button>
+        <br><br>
+
+        <input type="submit" value="submit">
+
+        <form action="" target="_blank">
+            <fieldset style="width: 200px; height: 100px;">
+                <legend>Commerciale</legend>
+                <label for="cars">chosi le voiture</label><br>
+                <select name="cars" id="cars" size="2" multiple>
+                    <option value="volvo">volvo</option>
+                    <option value="bmw">bmw</option>
+                    <option value="audi" selected>audi</option>
+                </select>
+            </fieldset><br>
+        </form>
+
+        <form action="">
+            <input list="browser">
+            <datalist id="browser">
+                <option value="edge">
+                <option value="chrome">
+                <option value="safari">
+                <option value="opera">
+            </datalist>
+            <input type="submit">
+        </form> <br><br>
+
+        <form action="">
+            <label for="username">username:</label><br>
+            <input type="email" id="username" name="username"><br>
+            <label for="password">password</label><br>
+            <input type="password" id="password" name="password">
+            <input type="checkbox"><br>
+            <label for="name">name</label><br>
+            <input type="color" name="" id=""><br>
+            <input type="date"><br>
+            <input type="datetime-local">
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <p>si tu clique le button le form va envoyer</p><br>
+
+
+        <canvas id="myCanvas" width="200" height="100" style="border: 1px solid;"></canvas>
+        <canvas id="myCanvas1" width="200" height="100" style="border: 1px solid;"></canvas>
+
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="30" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <svg width="400" height="100">
+            <rect width="400" height="100" style="fill:rgb(215, 215, 228);stroke-width:10;stroke:rgb(0,0,0)" />
+        </svg>
+        <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+                style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+        <br><br>
+
+        <video width="300px" height="300px" autoplay>
+            <source src="/htmlactivite/videos/pexels_videos_2278095 (1080p).mp4">
+        </video><br>
+        <video src="/htmlactivite/videos/data_encrypting (720p).mp4" width="300px" height="300px" autoplay></video>
+        <!-- <audio src="/htmlactivite/audios/carnival-10957.mp3" autoplay controls></audio><br> -->
+
+        <br>
+
+        <!-- <iframe width="320" height="245" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" >
+        </iframe> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke();
+
+            var c = document.getElementById("myCanvas1");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+        </script>
+
+    </form>
+</body>
+
+</html>

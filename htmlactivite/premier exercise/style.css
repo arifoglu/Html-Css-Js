@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0 ;
+    margin: 0;
+}
+
+#exterieur{
+    background-color: #c5bfbf;
+    width: 500px;
+    height: 500px;
+    border: 1px #999;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px
+
+}
+#second{
+    width: 400px;
+    height: 420px;
+    padding:40px 40px 40px 40px;
+}
+#black{
+    width: 400px;
+    height: 40px;
+    background-color:#333;
+}
+
+#thin{
+    width: 100px;
+    height: 360px;
+    background-color: #fff;
+    border:1px solid;
+    float: left; 
+}
+#thick{
+    width: 400px;
+    height: 360px;
+    background-color: #fff;
+    border:1px solid;  
+}
+
+#grayfonce{
+    width: 400px;
+    height: 20px;
+    background-color:rgb(51, 89,135);
+    border:#666;
+}
+
+
+
+
+

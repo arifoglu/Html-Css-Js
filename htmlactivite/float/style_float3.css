@@ -1,0 +1,29 @@
+img{
+    width: 100px;
+    height: 100px;
+    float:right;
+    text-align: center;
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer , h5 {
+    background-color: beige;
+    text-align: center;
+}
+
+div{
+    float: left;
+}
+
+.a{
+background-color: bisque;
+border: 1px dotted;
+
+}
+
+

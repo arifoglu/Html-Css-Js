@@ -1,0 +1,16 @@
+img{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-left: 15px;
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    background-color:#c6bdbd;
+    text-align: center;
+}
