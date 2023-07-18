@@ -1,0 +1,19 @@
+.normal{
+   margin:auto;
+   border: 1px solid;
+   max-width: 500px;
+   max-height: 50px;
+   border: 3px solid;
+   padding: 50px;
+ /* this container width 500 + 2 side 50px thanks to padding 
+ total=600px until border
+ */
+}
+
+/* .extra{
+    margin:auto;
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid;
+} */
