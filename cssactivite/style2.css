@@ -1,0 +1,25 @@
+body{
+    /* background-image: url("/htmlactivite/images/nestle.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 200px;
+    background-attachment: scroll; */
+
+    background: url("/htmlactivite/images/nestle.png") no-repeat right scroll;
+    margin-right: 200px;
+}
+
+p{
+    border: 1px groove;
+    border-width: 2vw;
+    border-radius: 10px;
+    border-color:slategray;
+}
+
+h5{
+    border-left: 2px solid tan;
+    border-top: 1px dotted slategray;
+    border-bottom:2px  outset blue;
+    border-right: 1px groove black;
+    border-radius: 3px;
+}

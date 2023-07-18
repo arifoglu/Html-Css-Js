@@ -25,10 +25,15 @@ p , h4 {
 }
 
 body{
-    background-image: url("/htmlactivite/images/nestle.png");
+    /* background-image: url("/htmlactivite/images/nestle.png");
     background-repeat: no-repeat;
     background-position: right top;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    margin-right: 200px; */
+
+    /* this background property for  shorthand */
+    background: url("/htmlactivite/images/nestle.png") no-repeat right top ;
     margin-right: 200px;
 }
+
 
