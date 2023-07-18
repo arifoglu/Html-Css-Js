@@ -1,0 +1,34 @@
+p{
+    color:bisque;
+    text-align:center;
+}
+#new{
+    color:gray;
+    text-decoration:underline;
+}
+
+.same{
+    text-transform: uppercase;
+
+}
+/* this selector change just class of same under the tag of p */
+p.same{
+    background-color:rgb(230, 218, 230);
+}
+
+*{
+    text-align:center;
+}
+
+p , h4 {
+    opacity: 0.4;
+}
+
+body{
+    background-image: url("/htmlactivite/images/nestle.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    margin-right: 200px;
+}
+
