@@ -1,3 +1,4 @@
+
 p{
     text-decoration: wheat;
     text-transform:uppercase;
@@ -43,12 +44,17 @@ a:hover , a:active{
     color:rgb(141, 146, 146);
 }
 
-a{
-    cursor:;
+
+ul.a {
+    list-style-type:square;
 }
 
-
-
+ul.b {
+    list-style-type:upper-roman;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -65,4 +71,17 @@ h5{
 }
 h6{
     font-size: 2vw;
+}
+
+
+table,th,td{
+    height: 5vh;
+    width: 30vw;
+    border: 1px groove;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: top;
+}
+tr:hover{
+    background-color: brown
 }
