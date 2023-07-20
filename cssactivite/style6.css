@@ -1,0 +1,36 @@
+#overflowtest{
+    padding: 15px;
+    width: 50%;
+    height: 200px;
+    overflow-x:scroll;
+    overflow-y: scroll;
+    
+}
+
+img{
+    float:right;
+}
+
+section{
+    float:left;
+
+}
+
+.div1{
+    float: left;
+    border: 3px solid;
+    padding: 10px;
+
+}
+
+.div2{
+    border: 1px solid;
+    padding: 10px;
+    overflow: auto
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
