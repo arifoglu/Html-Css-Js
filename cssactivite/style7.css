@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
 }
+
+/* i tried foat1 */
 /* 
 .img_container{
     float: left;
@@ -42,10 +44,13 @@ a:hover{
 .active{
     background-color: red;
 } */
-body{
+
+
+/* i tried float2 */
+
+/* body{
     margin: auto;
 }
-
 
 .header{
     width: 80%;
@@ -110,4 +115,41 @@ h2{
 }
 .foot:hover{
     background-color: slategray;
-}
+} */
+
+/* navbar */
+/* .nav{
+    background-color:beige; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+  }
+
+  li{
+    display: inline-block;
+  }
+
+  a:hover{
+    background-color: rgb(187, 159, 124);
+    opacity: 0.2;
+    
+  } */
+
+
+  /* at this part i tried dropdown */
+/* 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } */
