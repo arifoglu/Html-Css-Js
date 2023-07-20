@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-
+/* 
 .img_container{
     float: left;
     border: 1px groove;
@@ -41,4 +41,73 @@ a:hover{
 
 .active{
     background-color: red;
+} */
+body{
+    margin: auto;
+}
+
+
+.header{
+    width: 80%;
+    border: 1px groove;
+    padding: 10px;
+    text-align: center;
+}
+.header:hover{
+    background-color: dimgrey;
+}
+.main{
+    width: 80%;
+    border: 1px groove;
+    padding: 10px;
+}
+.main:hover{
+    background-color: silver;
+}
+
+.list{
+    width: 25%;
+    float: left;
+}
+
+.list::after{
+    content: "";
+    clear: both;
+    display: table
+}
+
+ul{
+
+}
+li{
+    list-style-type: none;
+    cursor: cell;
+    padding: 3px;
+   
+    text-align: center;
+}
+li:hover{
+    background-color: rgb(205, 205, 205);
+}
+
+.par{
+    width: 75%;
+}
+.par:hover{
+    cursor:pointer;
+}
+h2{
+    text-align: center;
+}
+
+
+.foot{
+    width: 80%;
+    border: 1px groove;
+    padding: 10px;
+    text-align: center;
+    cursor: copy;
+}
+.foot:hover{
+    background-color: slategray;
 }
