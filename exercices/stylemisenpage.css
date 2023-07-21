@@ -72,13 +72,19 @@ h1{
     border: 1px solid;
     width: 500px;
     height: 30px;
-    margin-left: 46px;  
+    margin-left: 46px; 
+    font-family: Verdana  sans-serif;
+    font-size: 24px #000000; 
 }
 p{
     border: 1px solid;
     margin-left: 82px;
     margin-right: 82px;
     height: 260px;
+    font-family: Verdana sans-serif;
+    font-size: 11px #000000;
+    line-height: 20px;
+
 }
 
 
@@ -88,4 +94,29 @@ aside{
     width: 186px;
     height: 390px;
     border: 1px solid;
+    background-color:rgb(179, 159, 123) ;
+}
+
+
+#list{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    
+}
+
+
+#list a {
+    text-decoration: none;
+    
+}
+li{
+    list-style-type: none;
+}
+li:hover{
+    background-color: #000000;
+}
+a:hover{
+    background-color: black;
+    color: white;
 }

@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: #999;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav{
+    background-color: hsl(0, 28%, 91%);
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color:darkgray;
+    text-align: center;
+    padding: 15px 35px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #cdd6c9fa;
+    
+}
+
+.column{
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+
+/* if we dont use this << clear >> ,footer will add others columns */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer{
+    background-color: #999;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
