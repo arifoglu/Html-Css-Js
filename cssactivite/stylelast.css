@@ -1,0 +1,172 @@
+.flex-container{
+   width: 30%;
+   background-color: #f1f1f1;
+   display: flex;  
+}
+
+.flex-container > div {
+   background-color: wheat;
+   margin: 10px;
+   padding: 10px;
+}
+
+.flex-container2{
+    width: 30%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column-reverse;  
+ }
+ 
+ .flex-container2 > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 10px;
+ }
+
+ .flex-container3{
+    width: 30%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row-reverse;  
+ }
+ 
+ .flex-container3 > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 10px;
+ }
+ .flex-container4{
+    width: 30%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap; 
+ }
+ 
+ .flex-container4 > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 10px;
+ }
+
+ .flex-container5{
+    width: 30%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+    
+ }
+ 
+ .flex-container5 > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 10px;
+ }
+
+
+ .flex-container6{
+    width: 30%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+ }
+ 
+ .flex-container6 > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 10px;
+ }
+
+ .flex-container7{
+    width: 30%;
+    height: 100px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+ }
+ 
+ .flex-container7 > div {
+    background-color: wheat;
+    margin: 10px;
+    padding: 10px;
+ }
+
+ .flex-container8{
+   width: 30%;
+   background-color: #f1f1f1;
+   display: flex;  
+   flex-wrap: wrap;
+}
+
+.flex-container8 > div {
+   background-color: wheat;
+   margin: 10px;
+   padding: 10px;
+   
+}
+
+.flex-container9{
+   width: 30%;
+   min-height: 100px;
+   background-color: #f1f1f1;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+.flex-container9 > div {
+   background-color: wheat;
+   margin: 10px;
+   padding: 10px;
+   
+}
+
+.flex-container10{
+   width: 30%;
+   background-color: #f1f1f1;
+   display: flex;  
+   flex-direction: row;
+}
+
+@media (max-width:800px) {
+   .flex-container10{
+      flex-direction: column;
+   }
+}
+
+.flex-container10 > div {
+   background-color: wheat;
+   margin: 10px;
+   padding: 10px;
+   
+}
+
+
+.flex-container11{
+   width: 30%;
+   background-color: #f1f1f1;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: end;
+}
+
+.flex-container11 > div {
+   background-color: wheat;
+   margin: 10px;
+   padding: 10px;
+}
+
+
+@media screen and (max-width:900px) and (min-width:600px) {
+    div.example {
+        font-size: 50px;
+        padding: 50px;
+        border: 8px solid black;
+        background: rgb(142, 142, 75);
+    }
+
+}

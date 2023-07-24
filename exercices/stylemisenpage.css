@@ -30,13 +30,16 @@ main , section ,aside,nav{
     max-width: 802px;
     min-height:134px ;
     border: 1px solid;
-
+    background-image: url(images/bkg-nuage.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #000000;
+    display: flex;
 }
 
 #top{
     max-width: 802px;
     min-height:134px ;
-    border: 1px solid;
 
     /* position: relative;
     z-index: 1; */
