@@ -53,8 +53,7 @@ footer{
 
 /* responsive design 
 until width 600px these columns display next to each other
-after with 600px  these columns display stack on top of each other                  
-
+after with 600px  these columns display stack on top of each other
 */
 
 @media (max-width:600px){
