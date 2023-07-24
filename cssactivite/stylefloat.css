@@ -1,0 +1,64 @@
+*{
+ box-sizing: border-box;   
+}
+
+main{
+    margin: auto;
+}
+
+header{
+
+padding: 10px;
+background-color: rgb(243, 237, 229);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.middle_container{
+   
+    background-color: rgb(201, 195, 188);
+}
+
+.middle_container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section{
+    float: left;
+    padding: 10px;
+    text-align: center;
+    width: 33%;
+
+}
+
+.column1 , .column2 , .column3{
+    width: 33.33%;
+    padding: 10px;
+    height:100px;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(151, 148, 144);
+    padding: 10px;
+}
+
+
+
+/* responsive design 
+until width 600px these columns display next to each other
+after with 600px  these columns display stack on top of each other                  
+
+*/
+
+@media (max-width:600px){
+    .column1 ,.column2 ,.column3{
+        width: 100%;
+    }
+}
