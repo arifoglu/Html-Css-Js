@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main , section ,aside,nav{
+    display: block;
+}
+/* div container */
+#container{
+    margin: auto;
+    max-width: 900px;
+    min-height:600px ;   
+}
+/* div container2 */
+#container2{
+    margin-left: 40px;
+    max-width: 802px;
+    min-height:600px ;
+    border: 1px groove;   
+}
+#maintop{
+    max-width: 802px;
+    min-height:134px ;
+    background-image: url(images/bkg-nuage.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #000000;
+    display: flex;
+}
+img:hover{
+    transform: rotate(45deg);
+    transition: all 3s;
+    cursor: pointer;
+}
+img:active{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+}
+#top{
+    max-width: 802px;
+    min-height:134px ;  
+}
+/* nav  */
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    margin: 20px;
+}
+nav a{
+    color:#fb9f07;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 16px;
+    width: 150px;
+}
+span{
+    color: white;
+    text-align:center;
+}
+/* middle part */
+#middle{
+    max-width: 802px;
+    min-height:96px ;
+    border: 1px solid;
+}
+#bottom{
+    display: flex;
+    justify-content: flex-start;
+}
+#leftside{
+    width: 618px;
+    height:390px ;
+}
+h1{
+    width: 500px;
+    height: 30px;
+    margin-left: 46px; 
+    font-family: Verdana  sans-serif;
+    font-size: 24px #000000; 
+}
+p{ 
+    margin-left: 82px;
+    margin-right: 82px;
+    height: 260px;
+    font-family: Verdana sans-serif;
+    font-size: 11px #000000;
+    line-height: 20px;
+}
+#foot{
+    margin: 10px;
+}
+/* aside */
+aside{
+    width: 186px;
+    height: 390px;
+    background-image: url('/exercices_emploilausanne/images/asideimage1.jpg');
+    background-repeat: no-repeat;
+}
+#list{
+    line-height: 40px;  
+    margin: 0;
+    padding: 0;  
+}
+#list a {
+    text-decoration: none; 
+    margin: 20px;
+}
+li{
+    list-style-type: none;
+}
+a:hover {
+    color: white;
+}
+li:hover {
+    background-color: #000000;
+    color: white;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:90px;}
+    50%  {left:400px; top:90px;}
+    75%  {left:400px; top:90px;}
+    100% {left:600px; top:90px;}
+  }
+/* 
+@media (max-width:600px) {
+    html,body{
+        min-width: 300px;
+        min-height: 300px;
+    } 
+} */
+
+  
