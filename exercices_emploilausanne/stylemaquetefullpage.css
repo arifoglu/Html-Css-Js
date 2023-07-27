@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main,section,aside,nav,ul,form,li{
+display: block;
+}
+main{
+    margin: auto;
+    width: 796px;
+    height:1155px ;
+    border: 1px groove;
+    
+}
+/* div header */
+#header{
+    width: 796px;
+    height: 53px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-between;
+}
+#header h1{
+font-family: Arial, Helvetica, sans-serif;
+font-style: trebuchet italic;
+color: white;
+font-size: 20px;
+margin-left: 78px;
+}
+#login{
+    color: #ffffff;
+    margin-right: 78px;
+    padding-top:15px ;
+    font-size: 15px;
+}
+#inscription{
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: black;
+}
+/* div menu */
+#menu{
+    width: 796px;
+    height: 34px;
+    
+    display: flex;
+    background-color: black;   
+}
+#menu_list{
+    margin-left: 78px;
+    padding: 0;
+    grid-template-columns: auto auto auto auto auto ;
+    column-gap: 40px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    display: grid;
+    font-size: 10px;   
+}
+.menu_list_link{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    background-color: rgb(133, 53, 53);
+}
+form{
+    margin-top: 6px;
+    margin-left: 85px;
+    margin-right: 78px;
+    color: #ffffff;
+}
+label{
+    text-decoration:underline ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+/* div chapeau */
+#chapeau{
+    width: 796px;
+    height: 321px;
+    background-image: url('/exercices_emploilausanne/images/browser_background1.png');
+    background-repeat: no-repeat; 
+}
+#chapeau_contenu{
+    width: 796px;
+    height: 275px;
+    
+}
+#chapeau h1{
+    margin-left: 78px;
+    color: #ffffff;
+    font-size: 25px;
+    font-style: trebuchet italic;
+    word-spacing: 17px;
+}
+.chapeau_contenu_p{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 78px;
+    word-spacing: 3px;
+}
+/* chapeau onglets */
+#chapeau_onglets{
+    width: 640px;
+    height: 46px;
+    margin-left: 78px;
+    background-color: #d3d3d3;
+}
+#chapeau_link{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 50px;
+    margin-top: 0;
+    text-decoration: none;
+}
+#chapeau_link li a{
+    text-decoration: none;
+}
+#chapeau_link span{
+    font-size: 8px;
+    color: #848484;
+    
+}
+/* div corps */
+#corps{
+    margin: 0;
+    width: 796px;
+    height: 443px;
+    background-image: url('/exercices_emploilausanne/images/corpsbackground.png');
+    background-repeat: no-repeat;
+
+    line-height:20px;
+}
+#corps_contenu_top h2{
+    margin-left: 78px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1a133;
+}
+#corps_contenu_top p{
+    margin-left: 110px;
+    line-height: 20px;
+}
+#corps_contenu_bottom{
+    margin-left:78px ;  
+}
+#corps_contenu_bottom p{
+font-size: 11px;
+font-family: Arial, Helvetica, sans-serif;
+color: #8a8a8a;
+}
+
+
+/* div pied_page */
+#piedpage_main{
+    background-color: #1c1c1c;
+}
+#piedpage{
+    height: 248px;
+    margin-left: 78px;
+    margin-right: 78px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    column-gap: 5px;
+}
+.deepdiv{
+  height: 248px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.deepdiv p{
+    font-size: 9px;   
+}
+#piedpage h5{
+    text-align:left;
+    font-size: 10px;  
+}
+.deepdiv a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 30px;
+}
+.deepdiv a:hover{
+    background-color: rgb(108, 47, 47);
+}
+
+#deep_address{
+    display: flex;
+    flex-direction: column;
+}
+#deep_address div{
+   height: 80px;
+}
+address{
+    font-size: 9px;
+}
+/* footer */
+footer{
+    height: 29px;
+    margin-left: 78px;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b0b0b0;
+}
