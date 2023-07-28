@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullpage</title>
-    <link rel="stylesheet" href="/exercices_emploilausanne/stylemaquetefullpage.css">
+    <title>contact</title>
+    <link rel="stylesheet" href="/stylemaquetefulpage_form.css">
 </head>
 
 <body>
     <main>
         <div id="header">
-            <h1><i class="fa-solid fa-circle-play" style="color: #edc32c;"></i>  Atelier WEB(HTML/CSS)</h1>
+            <h1><i class="fa-solid fa-circle-play" style="color: #edc32c;"></i> Atelier WEB(HTML/CSS)</h1>
             <a class="headerlink" id="inscription" href="">inscripton</a>
             <a class="headerlink" id="login" href="">login</a>
         </div>
@@ -31,40 +31,56 @@
         </div>
         <div id="chapeau">
             <div id="chapeau_contenu">
-                <h1>Concevoir des sites qui respectent les normes et <br> éxigences du Web</h1>
-                <p class="chapeau_contenu_p">S'accomoder des contraintes techniques<br> qu'imposent les navigateurs</p>
-                <p class="chapeau_contenu_p">Se sensibiliser aux normes W3C et <br> d'accesibilité</p>
-                <p class="chapeau_contenu_p">Acceder au HTML5 CSS3</p>
-            </div>
-            <div id="chapeau_onglets">
-                <ul id="chapeau_link">
-                    <li><a href=""><i class="fa-solid fa-circle fa-2xs" style="color: #828487;"></i>HTML</a></li>
-                    <li><a href=""><i class="fa-solid fa-circle fa-2xs" style="color: #828487;"></i>CSS </a></li>
-                    <li><a href=""><i class="fa-solid fa-circle fa-2xs" style="color: #828487;"></i>NAViGATEURS</a></li>
-                    <li><a href=""><i class="fa-solid fa-circle fa-2xs" style="color: #828487;"></i>MOBILE</a></li>
-                </ul>
+                <h1>Gardez le contact et transmettez-nous vous<br>remarques</h1>
+                <address id="news">
+                    Chemin e l'inforoute 66 <br>1004 Lausanne-sur Web <br>C.P :52 <br>Tel:+41(21)444 44 44
+                    <br>Fax:+41(21)444 44 45 <br><br> <em>Plan d'accés</em>
+                </address>
             </div>
         </div>
         <div id="corps">
-            <div id="corps_contenu_top">
-                <h2>Vers la Web &ltsimplicité&gt !</h2>
-                <p id="corps_contenu_top_paragfirst" style="margin-left: 78px;">L'approche HTML se défini par la
-                    structure de la <br> mise en page</p>
-                <p>Mise en page avec les balises &ltdiv&gt et les <br>nouvelles balises du HTML 5 <br>
-                    Mise en forme et les balises de titres &lth1&gt à <br> &lth6&gt les paragraph &ltp&gt et les listes
-                    &ltol&gt et <br> &ltul&gt Création dés menus sous forme de liste <br> Less balises dessinés aux
-                    formulaires avec <br>&ltform&gt &ltinput&gt &ltextarea&gt &ltselect&gt &ltoption&gt <br>et les
-                    autres <br>Les tableaux de données avec les balises &lttable&gt, <br>&lttr&gt,&ltth&gt et &lttd&gt
-                </p>
-            </div>
-            <div id="corps_contenu_bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni officia quisquam dolores! Quam iusto
-                    quaerat accusantium eos, <br> quasi incidunt culpa quae necessitatibus nisi ad repellat obcaecati,
-                    delectus, odit dolores adipisci?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquam voluptates iure quod sequi
-                    accusantium vitae <br> praesentium minus ullam! Id perferendis dolor quaerat modi ab? Natus minima
-                    atque odit qui?</p>
-            </div>
+            <!-- new form will created -->
+
+            <form action="">
+                <fieldset>
+                    <legend>Formulaire D'envoi D'email </legend>
+                    <section id="formsection">
+                        <label for="nom">NOM</label>
+                        <input type="text"><br><br>
+                        <label for="">Prénom</label>
+                        <input type="text">
+                    </section>
+                    <label for="selection">SUJET</label>
+                    <select name="" id="information" size="1">
+                        <option value="information">je voudrais plus d'information</option>
+                        <option value="acceder">comment on peut acceder le cours</option>
+                        <option value="">comment on peut voir le tarif</option>
+                        <textarea name="message" id="" cols="80" rows="15"></textarea>
+                    </select>
+                    
+                    <section>
+                        <input type="radio" name="css" id="css">
+                        <label for="css">cs</label><br>
+                        <button type="submit">envoyer le message</button>
+                    </section>
+
+                </fieldset>
+
+
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
         <div id="piedpage_main">
             <div id="piedpage">
@@ -109,12 +125,18 @@
                     </h5>
                     <div id="deep_address">
                         <div id="tek" class="icon">
-                           <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" style="color: #2868d7;"></i></a>   
-                           <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp" style="color: #2fec09;"></i></a>
-                           <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter" style="color: #1268fd;"></i></a>
-                           <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #d3124c;"></i></a>
-                           <a href="https://slack.com/intl/fr-ch/" target="_blank"><i class="fa-brands fa-slack" style="color: #2571f4;"></i></a>
-                           <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #236ae7;"></i></a>  
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"
+                                    style="color: #2868d7;"></i></a>
+                            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"
+                                    style="color: #2fec09;"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"
+                                    style="color: #1268fd;"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"
+                                    style="color: #d3124c;"></i></a>
+                            <a href="https://slack.com/intl/fr-ch/" target="_blank"><i class="fa-brands fa-slack"
+                                    style="color: #2571f4;"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"
+                                    style="color: #236ae7;"></i></a>
                         </div>
                         <div>
                             <address>COMMENT NOUS CONTACTER
@@ -126,7 +148,6 @@
                 </div>
             </div>
         </div>
-
         <footer>
             <p>&copy 2023 ATELIER Web HTML_CSS</p>
         </footer>
