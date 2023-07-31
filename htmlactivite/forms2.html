@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms2</title>
+</head>
+<body>
+    <form action=""     autocomplete="on" novalidate>
+
+<!-- for attribute of the label must equal id of the input -->
+        <input type="text" id="firstname">
+        <label for="firstname">firstname</label>
+        <br><br>
+
+        <input type="checkbox">
+        <label for="firstname">checkbox</label>
+        <br><br>
+
+        <input type="color">
+        <label for="firstname">color</label>
+        <br><br>
+        <input type="date">
+        <label for="firstname">date</label>
+        <br><br>
+
+        <input type="datetime">
+        <label for="firstname">datetime</label>
+        <br><br>
+
+        <input type="datetime-local">
+        <label for="firstname">datetime-local</label>
+        <br><br>
+
+        <input type="email">
+        <label for="firstname">email</label>
+        <br><br>
+
+        <input type="file">
+        <label for="firstname">file</label>
+        <br><br>
+
+        <input type="image">
+        <label for="firstname">image</label>
+        <br><br>
+
+        <input type="month">
+        <label for="firstname">month</label>
+        <br><br>
+
+        <input type="number">
+        <label for="firstname">number</label>
+        <br><br>
+
+        <input type="password">
+        <label for="firstname">password</label>
+        <br><br>
+
+        <input type="radio">
+        <label for="firstname">radio</label>
+        <br><br>
+
+        <input type="range">
+        <label for="firstname">range</label>
+        <br><br>
+
+        <input type="reset">
+        <label for="firstname">reset</label>
+        <br><br>
+
+        <input type="search">
+        <label for="firstname">search</label>
+        <br><br>
+
+        <input type="submit">
+        <label for="firstname">submit</label>
+        <br><br>
+
+        <input type="tel">
+        <label for="firstname">tel</label>
+        <br><br>
+
+        <input type="time">
+        <label for="firstname">time</label>
+        <br><br>
+
+        <input type="url">
+        <label for="firstname">url</label>
+        <br><br>
+
+        <input type="week">
+        <label for="firstname">week</label>
+        <br><br>
+
+        <form action="">required trying
+            <label for="firstname">name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <input type="submit" value="Submit">
+        </form>
+
+
+       <fieldset>
+        <legend>choose</legend>
+        <label for="cars">select a car </label>
+        <select name="cars" id="cars" size="1">
+            <option value="bmw">bmw</option>
+            <option value="ferrari">ferrari</option>
+            <option value="volvo">volvo</option>
+        </select>
+        <input type="submit" id="cars">
+        <br><br>
+        <input list="browsers" required>
+        <datalist id="browsers">
+            <option value="edge"></option>
+            <option value="chrome"></option>
+            <option value="safari"></option>
+            <option value="opera"></option>
+        </datalist>
+        <input type="submit" value="envoyer" required>
+       </fieldset>
+       <br><br>
+
+   
+
+
+
+    </form>
+</body>
+</html>

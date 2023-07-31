@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="styleform1.css">
+</head>
+
+<body>
+    <div id="container">
+        <form id="form_container" action="" autocomplete="on">
+            <div>
+                <label for="nom">Nom</label><br>
+                <input type="text" name="nom" id="nom" placeholder="name">
+            </div>
+            <div>
+                <label for="cars">CARS</label> <br>
+                <input list="cars" name="cars">
+                <datalist name="cars" id="cars">
+                    <option value="bmw">bmw</option>
+                    <option value="volvo">volvo</option>
+                    <option value="lotus">lotus</option>
+                    <option value="suzuki">suzuki</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="model"></label>
+                <input type="checkbox">2023<br>
+                <label for="model"></label>
+                <input type="checkbox">2022<br>
+            </div>
+            <div id="radio">
+                <label for="colors"></label>
+                <input type="radio" id="colors">bleu<br>
+                <input type="radio" id="colors">noir<br>
+                <input type="radio" id="colors">jaune<br>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Légend</legend>
+                    <label for=""></label>
+                    <input type="text" value="Parcourir...">
+                </fieldset>
+            </div>
+            <div>
+                <label for="">Etiquette</label><br>
+                <textarea name="" id="" cols="15" rows="3">Contenu de la zone de texte.</textarea>
+            </div>
+            <button type="button" onclick="alert('FIRSTFORM!!! it can be errror')">Envoyer</button>
+        </form>
+    </div>
+</body>
+
+</html>
