@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_training</title>
+    <link rel="stylesheet" href="style_form_trainig.css">
+</head>
+<body>
+    <form action="">
+        <p>Vous êtes </p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Homme</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Femme</label>
+
+        <p>Qui s'interesse à ...</p>
+        <input type="checkbox" id="web">
+        <label for="web">Web Development</label><br>
+        <input type="checkbox" id="photoshop">
+        <label for="photoshop">Photoshopt</label><br>
+        <input type="checkbox" id="Art">
+        <label for="Art">Art</label><br>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <input type="email" placeholder="email" required>
+            <span class="tick"></span>
+            <input type="tel" placeholder="numero de téléphone">
+            <span class="tick"></span>
+        </fieldset>
+
+        <p>Comment vous préférez contacter?</p>
+        <select>
+            <option>par email</option>
+            <option>par telephone</option>
+        </select>
+        <input type="submit" value="accept">
+    </form>
+    <script src="https://kit.fontawesome.com/ef5a662847.js" crossorigin="anonymous"></script>
+</body>
+</html>

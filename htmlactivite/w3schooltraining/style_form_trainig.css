@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(53, 52, 52);
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form{
+    margin: 20px;
+    color: rgb(135, 121, 121);
+}
+form p{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+/* radio box */
+/* firstly we have to hidden radio  */
+input[type="radio"]{
+    width: 0;
+    margin: 0;
+    opacity: 0;
+}
+label[for="male"], label[for="female"]{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 26px;
+    background: url('') no-repeat;
+    background-position: 0 -32px;
+    line-height: 24px;
+    cursor: pointer;
+    
+}
