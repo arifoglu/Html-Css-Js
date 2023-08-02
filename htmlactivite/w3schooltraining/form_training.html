@@ -8,36 +8,38 @@
     <link rel="stylesheet" href="style_form_trainig.css">
 </head>
 <body>
-    <form action="">
-        <p>Vous êtes </p>
-        <input type="radio" id="male" name="gender">
-        <label for="male">Homme</label><br>
-        <input type="radio" id="female" name="gender">
-        <label for="female">Femme</label>
-
-        <p>Qui s'interesse à ...</p>
-        <input type="checkbox" id="web">
-        <label for="web">Web Development</label><br>
-        <input type="checkbox" id="photoshop">
-        <label for="photoshop">Photoshopt</label><br>
-        <input type="checkbox" id="Art">
-        <label for="Art">Art</label><br>
-
-        <fieldset>
-            <legend>Contact</legend>
-            <input type="email" placeholder="email" required>
-            <span class="tick"></span>
-            <input type="tel" placeholder="numero de téléphone">
-            <span class="tick"></span>
-        </fieldset>
-
-        <p>Comment vous préférez contacter?</p>
-        <select>
-            <option>par email</option>
-            <option>par telephone</option>
-        </select>
-        <input type="submit" value="accept">
-    </form>
+    <div>
+        <form action="">
+            <p>Vous êtes </p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Homme</label><br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Femme</label>
+    
+            <p>Qui s'interesse à ...</p>
+            <input type="checkbox" id="web">
+            <label for="web">Web Development</label><br>
+            <input type="checkbox" id="photoshop">
+            <label for="photoshop">Photoshop</label><br>
+            <input type="checkbox" id="art">
+            <label for="art">Art</label><br>
+    
+            <fieldset>
+                <legend>Contact Info</legend>
+                <input type="email" placeholder="email" required>
+                <span class="tick"></span>
+                <input type="tel" placeholder="numero de téléphone">
+                <span class="tick"></span>
+            </fieldset>
+    
+            <p>Comment vous préférez contacter?</p>
+            <select>
+                <option>par email</option>
+                <option>par telephone</option>
+            </select>
+            <input type="submit" value="accept" onclick="alert('this does not work')" >
+        </form>
+    </div>
     <script src="https://kit.fontawesome.com/ef5a662847.js" crossorigin="anonymous"></script>
 </body>
 </html>

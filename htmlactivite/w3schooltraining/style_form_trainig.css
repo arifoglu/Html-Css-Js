@@ -1,30 +1,121 @@
 body{
-    background-color: rgb(53, 52, 52);
+    background-color: #1b1a1a;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 form{
     margin: 20px;
-    color: rgb(135, 121, 121);
+    color: #9a8b8be7;
 }
 form p{
     font-size: 18px;
     letter-spacing: 0.1em;
 }
-/* radio box */
+                /*RADIO BOX */
 /* firstly we have to hidden radio  */
+/* and then we add background image and we have to adjust background position */
+/*  finaly we use "checked psuedo" for background position ,while we click on the radio box background images adjust position again*/
 input[type="radio"]{
-    width: 0;
-    margin: 0;
     opacity: 0;
+    width: 0;
+    margin: 0;  
 }
 label[for="male"], label[for="female"]{
     margin-bottom: 10px;
     display: inline-block;
     padding-left: 26px;
-    background: url('') no-repeat;
+    background: url('/htmlactivite/images/checks\ \(2\).png') no-repeat;
     background-position: 0 -32px;
     line-height: 24px;
+    cursor: pointer;  
+}
+
+input:checked + label[for="male"],
+input:checked + label[for="female"]{
+    background-position: 0 0;
+    color: #c49494;
+}
+                    /*CHECKBOX */                            
+   input[type=checkbox]{
+    opacity: 0;
+    width: 0;
+    margin: 0;
+   }                         
+
+   label[for="web"],
+   label[for="photoshop"],
+   label[for="art"]{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 26px;
+    background: url(/htmlactivite/images/checks\ \(2\).png) no-repeat;
+    background-position: 0 -98px;
+    line-height: 24px;
     cursor: pointer;
-    
+   }
+
+   input:checked + label[for="web"],
+   input:checked + label[for="photoshop"],
+   input:checked + label[for="art"]{
+    background-position: 0 -65px;
+    color:#c49494 ;
+   }
+
+                          /* fieldset*/
+fieldset{
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid;
+}
+legend{
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+input[type="email"],
+input[type="tel"]{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 50px;
+    border: 0;
+    border-radius: 4px;
+    background: url("/htmlactivite/images/inputs.png") no-repeat;
+    background-color: #222;
+    color:#fff ;
+    font-size: 16px;
+}
+input[type="email"]{
+background-position: 7px 8px;
+}
+input[type="tel"]{
+    background-position: 7px -58px;
+ }
+
+ /* Select box */
+
+ select{
+    appearance: none;
+    display: block;
+    margin: 30px 0;
+    padding: 10px 50px 10px 10px;
+    background: url("/htmlactivite/images/select.png") no-repeat 95% center;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    width: 280px;
+    font-size: 16px;
+ }
+
+input[type="submit"]{
+    background-color: #c49494;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-radius: 4px;
+    width: 280px;
+    cursor: pointer;
 }
