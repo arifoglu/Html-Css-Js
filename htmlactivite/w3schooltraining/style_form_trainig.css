@@ -7,6 +7,7 @@ body{
 form{
     margin: 20px;
     color: #9a8b8be7;
+    
 }
 form p{
     font-size: 18px;
@@ -82,8 +83,10 @@ input[type="tel"]{
     border-radius: 4px;
     background: url("/htmlactivite/images/inputs.png") no-repeat;
     background-color: #222;
-    color:#fff ;
+    color:#ffffff ;
     font-size: 16px;
+    float: left;
+    clear: both;
 }
 input[type="email"]{
 background-position: 7px 8px;
@@ -118,4 +121,44 @@ input[type="submit"]{
     border-radius: 4px;
     width: 280px;
     cursor: pointer;
+}
+
+
+input[type="email"]:valid,
+input[type="tel"]:valid{
+    border: 2px solid #fff;
+}
+
+input[type="email"]:valid{
+    background-position: 7px -22px;
+}
+
+input[type="tel"]:valid{
+    background-position: 7px -97px;
+}
+
+input[type="email"]:valid + .tick,
+input[type="tel"]:valid + .tick {
+    background: url("/htmlactivite/images/tick.png") center;
+    display: block;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    float: left;
+}
+
+/* validation  */
+
+.error_message{
+    display: none;
+    font-weight: bold;
+    color: #fff;
+}
+/* this part must write for novalidate */
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid ~ .error_message{
+    display: block;
+}
+input[type="tel"]:not(:focus):not(:placeholder-shown):invalid ~ .error_message{
+    display: block;
 }

@@ -9,13 +9,12 @@
 </head>
 <body>
     <div>
-        <form action="">
+        <form action="" autocomplete="on">
             <p>Vous êtes </p>
             <input type="radio" id="male" name="gender">
             <label for="male">Homme</label><br>
             <input type="radio" id="female" name="gender">
             <label for="female">Femme</label>
-    
             <p>Qui s'interesse à ...</p>
             <input type="checkbox" id="web">
             <label for="web">Web Development</label><br>
@@ -23,15 +22,14 @@
             <label for="photoshop">Photoshop</label><br>
             <input type="checkbox" id="art">
             <label for="art">Art</label><br>
-    
             <fieldset>
                 <legend>Contact Info</legend>
-                <input type="email" placeholder="email" required>
-                <span class="tick"></span>
+                <input type="email" placeholder="email" required autocomplete="on">
+                <span class="tick"></span><br>
+                <p class="error_message">Please enter a valid e-mail addres</p>
                 <input type="tel" placeholder="numero de téléphone">
                 <span class="tick"></span>
             </fieldset>
-    
             <p>Comment vous préférez contacter?</p>
             <select>
                 <option>par email</option>
