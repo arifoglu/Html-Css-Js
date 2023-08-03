@@ -8,20 +8,19 @@
     <title>Validation</title>
     <link rel="stylesheet" href="styleform_validation.css">
 </head>
-
 <body>
     <div id="container_form">
         <form action="">
             <div id="top">
                 <label for="email">Adresse  <span>e-mail</span> </label><br>
-                <input type="email" id="email" required placeholder="enter e-mail">
+                <input type="email" id="email" class="email" required placeholder="enter e-mail" >
                 <span class="tick"></span><br>
-                <p class="error-message">Veulliez rempli ce champ</p>
+                <p class="error-message">Veulliez remplir ce champ</p>
                 <h5>Votre adresse ne sera récupérée <br> ou exploitée </h5>
             </div>
             <div>
                 <label for="password">Mot de passe</label><br>
-                <input type="password" id="pass" required><br>
+                <input title="Doit contenir au moins 8 caractères"  type="password" id="password"   required ><br>
                 <a href="/404.html" target="_blank">Mot de passe publié?</a>
             </div>
             <button onclick="alert('attention')">Se connecter</button>
