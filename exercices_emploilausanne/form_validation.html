@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="styleform_validation.css">
+</head>
+
+<body>
+    <div id="container_form">
+        <form action="">
+            <div id="top">
+                <label for="email">Adresse  <span>e-mail</span> </label><br>
+                <input type="email" id="email" required placeholder="enter e-mail">
+                <span class="tick"></span><br>
+                <p class="error-message">Veulliez rempli ce champ</p>
+                <h5>Votre adresse ne sera récupérée <br> ou exploitée </h5>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label><br>
+                <input type="password" id="pass" required><br>
+                <a href="/404.html" target="_blank">Mot de passe publié?</a>
+            </div>
+            <button onclick="alert('attention')">Se connecter</button>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/ef5a662847.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

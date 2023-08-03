@@ -1,0 +1,108 @@
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+#container_form {
+    width: 300px;
+    height: 350px;
+    border: none;
+    margin: auto;
+    background-color: rgb(225, 225, 225);
+}
+div {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+div #top {
+    padding-top: 20px;
+}
+/* input email */
+input[type="email"] {
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px 6px;
+    background: url("/exercices_emploilausanne/images/enveloppe.png") no-repeat;
+    background-size: 35px 30px;
+    background-position: 155px;
+    background-color: white;
+}
+label[for="email"] {
+    font-size: 16px;
+    color: #000000;
+}
+span {
+    color: #989898;
+}
+p {
+    margin-top: 2px;
+    margin-bottom: 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12.8px;
+    margin-left: 45px;
+    color: #bc4b46;
+}
+/* validation  */
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid~.error-message {
+    display: block;
+}
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+}
+h5 {
+    font-size: 12.8px;
+    color: #989898;
+}
+/* input password */
+input[type="password"] {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+    letter-spacing: 6px;
+    -webkit-text-security: square;
+    background: url("/htmlactivite/images/locked.png") no-repeat;
+    background-position: right;
+    background-color: white;
+    border: 1px solid;
+}
+a {
+    color: #3483C5;
+    font-size: 12.8px;
+}
+label[for="password"] {
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+/* button */
+button {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #59B955;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}

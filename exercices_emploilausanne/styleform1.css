@@ -53,8 +53,9 @@ input[type=text] {
 }
 fieldset {
     border-radius: 10px;
-
 }
+
+
 textarea {
     border-radius: 10px;
 }
