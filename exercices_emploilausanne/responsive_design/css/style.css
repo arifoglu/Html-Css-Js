@@ -17,18 +17,18 @@ div#page {
     min-height: 400px;
 }
 
-div#page > aside {
+div#page>aside {
     width: 100%;
     padding: 54px 1.618122977346278% 36px 1.618122977346278%;
     background: #56c2c2;
 }
 
-div#page > main {
+div#page>main {
     width: 100%;
     padding: 27px 1.618122977346278%;
 }
 
-aside > img {
+aside>img {
     display: block;
     margin: 0 auto 40px auto;
     width: 294px;
@@ -110,8 +110,6 @@ ul.menu {
     list-style: none;
 }
 
-ul.menu li {}
-
 ul.menu li a {
     display: block;
     text-decoration: none;
@@ -146,25 +144,36 @@ ul.menu li a:hover {
 
 /* responsive design */
 
-@media only screen and (min-width:1206px){
-#page{
-    display: flex;
-}
-aside{
-    width: 446px;
-}
-main{
-    width: 760px;
-}
-.menu li ,div h2{
-    width: 294px;
-    margin-left: 66px;
-}
-main h5 ,main h4,main h1 ,main figure, main p,main h2 ,main ul{
-    margin-left: 81px;
-}
-aside > img {
-    width: 294px;  
-}
-}
+@media only screen and (min-width:1206px) {
+    #page {
+        display: flex;
+    }
 
+    aside {
+        width: 446px;
+    }
+
+    main {
+        width: 760px;
+    }
+
+    .menu li,
+    div h2 {
+        width: 294px;
+        margin-left: 66px;
+    }
+
+    main h5,
+    main h4,
+    main h1,
+    main figure,
+    main p,
+    main h2,
+    main ul {
+        margin-left: 81px;
+    }
+
+    aside>img {
+        width: 294px;
+    }
+}
