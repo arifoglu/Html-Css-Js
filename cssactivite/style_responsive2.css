@@ -44,19 +44,19 @@ ul li:hover{
     width: 35%;
     height: 320px;
     background-color:#c0c8cb; 
-    background: url(/practice_individu/cssactivite/images/Capture\ \ 2023-08-07\ 084808.png) no-repeat;
+    background: url(images/Capture\ \ 2023-08-07\ 084808.png) no-repeat;
     background-size: cover;
 }
 .col-s-9{
     width:35%;
     height: 320px;
-    background: url(/practice_individu/cssactivite/images/Capture\ .png) no-repeat;
+    background: url(images/Capture\ .png) no-repeat;
     background-size: cover;
     background-color: #c0c8cb;
 }
 .col-s-12{
     height: 320px;
-    background: url(/practice_individu/cssactivite/images/Capture\ 2023-08-07\ 090542.png) no-repeat;
+    background: url(images/Capture\ 2023-08-07\ 090542.png) no-repeat;
     background-size: 100% 100%;
     width: 30%;
     margin: 0;
@@ -96,15 +96,15 @@ h1 ,h2 {
         color: #ffffff;
     }
     .row{
-        background: url(/practice_individu/cssactivite/images/Capture\ .png) no-repeat;
+        background: url(images/Capture\ \ 2023-08-07\ 085400.png) no-repeat;
         background-size: 100% 50%;
     }
     .aside{
-        background:url(/practice_individu/cssactivite/images/Capture\ 2023-08-07\ 090542.png) no-repeat;
+        background:url(images/Capture\ 2023-08-07\ 090542.png) no-repeat;
         background-size:cover;
 
     }
-    .aside h2,p {
+    .aside h2,p ,.col-6 h1,.footer{
         display: none;
     }
     .col-s-3{width: 25%;}
