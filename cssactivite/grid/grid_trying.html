@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_page</title>
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+        }
+
+
+        #container {
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           gap: 10px;
+           grid-template-areas: 
+           "a12 a2 a9 a4"
+           "a5 a6 a7 a10"
+           "a3 a1 a11 a8"
+           ;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+       
+      .a1{
+        grid-area: a1;
+      }
+
+      .a2{
+        grid-area: a2;
+      }
+      .a3{
+        grid-area: a3;
+      }
+      .a4{
+        grid-area: a4;
+      }
+      .a5{
+        grid-area: a5;
+      }
+      .a6{
+        grid-area: a6;
+      }
+      .a7{
+        grid-area: a7;
+      }
+      .a7{
+        grid-area: a7;
+      }
+      .a8{
+        grid-area: a8;
+      }
+      .a9{
+        grid-area: a9;
+      }
+      .a10{
+        grid-area: a10;
+      }
+      
+      .a11{
+        grid-area: a11;
+      }
+      .a12{
+        grid-area: a12;
+      }
+        #container>* {
+            background-color: rgb(225, 220, 214);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="a1">1</div>
+        <div class="a2">2</div>
+        <div class="a3">3</div>
+        <div class="a4">4</div>
+        <div class="a5">5</div>
+        <div class="a6">6</div>
+        <div class="a7">7</div>
+        <div class="a8">8</div>
+        <div class="a9">9</div>
+        <div class="a10">10</div>
+        <div class="a11">11</div>
+        <div class="a12">12</div>
+       
+
+    </div>
+</body>
+
+</html>
