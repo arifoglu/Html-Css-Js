@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexpage</title>
+</head>
+<style>
+   *{
+    font-family: verdana;
+    margin: 0;
+}
+body{
+    background: #eee;
+}
+.wrapper{ 
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.flex-container{
+background-color: #fff;
+display: flex;
+flex-wrap: wrap;
+height: 600px;
+}
+
+.box{
+    height: 100px;
+    flex: 0 0 100px;
+}
+.one{
+    background-color: gray;
+    /* flex-grow: 10; */
+    /* flex-shrink: 5; */
+    /* flex-basis: 100px;
+    flex-grow: 1; */
+}
+.two{
+    background-color:blue;
+    /* flex-grow: 4; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 200px; */   
+}
+.three{
+    background-color:green;
+    /* flex-grow: 10; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 120px; */
+}
+</style>
+<body>
+    <div class="wrapper">
+        <div class="flex-container">¨
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+        </div>
+    </div>
+</body>
+</html>

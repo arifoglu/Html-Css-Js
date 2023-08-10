@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_page</title>
+    <style>
+        body{
+           color: rgb(203, 191, 176);
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+           margin: 40px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 300px 100px;
+            grid-template-areas: 
+            ". header"
+            "aside main"
+            "footer footer"
+            ;
+
+            column-gap: 10px;
+            row-gap: 10px;
+            margin: 0 auto;
+            max-width: 600px; 
+      
+        }
+        header{
+            grid-area: header;
+        }
+        aside{
+            grid-area: aside;
+        }
+        main{
+            grid-area: main;
+        }
+        footer{
+            grid-area: footer;
+        }
+        .container > *{
+            background-color: #444;
+            font-size: 30px;
+            padding: 30px;
+            text-align: left;
+            border-radius: 10px; 
+        }
+        @media only screen and (max-width:800px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-rows: 100px 300px 100px 100px;
+            grid-template-areas: 
+            "header"
+            "main"
+            "aside"
+            "footer"
+            ;
+            column-gap: 10px;
+            row-gap: 10px;
+            margin: 0 auto;
+            max-width: 600px; 
+      
+        }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <aside>aside</aside>
+        <main>main <br><em>More content than we had before so this column is now quite tall.</em> </main>
+        <footer>footer</footer>
+    </div> <br>
+</body>
+</html>
