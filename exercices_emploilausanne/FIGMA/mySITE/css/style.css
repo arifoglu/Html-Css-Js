@@ -1,0 +1,412 @@
+/* --- ||  étape 1   Reset CSS  ||  --- */
+
+/* simplifie la taille */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Supprimer les espaces par défaut /
+/ Forcer le style du texte via le style plutôt que les éléments */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Styles de l'agent utilisateur pour le mode sombre */
+
+html {
+    color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+    min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* --- ||  étape 2   Importation des la polices de caractères Lato et "River Avenue" premier  ||  --- */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'riverave';
+    src: url('../fonts/river_avenue/riverave.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- ||  étape 3   Définition des variables de couleurs  ||  --- */
+:root {
+    /* Couleur par leurs noms*/
+    --black: #1a1a1a;
+    --gray: rgba(26, 26, 26, 0.60);
+    --yellow: #EAF586;
+    --white: #fff;
+    --off-white: #FBFBF9;
+
+    /* Application des couleurs par leur importances*/
+    --primary-color: var(--black);
+    --accent-color: var(--yellow);
+    --text-color: var(--black);
+
+
+    /* Affectation des typos*/
+    --titre-font: 'riverave', sans-serif;
+    --texte-font: 'Lato', sans-serif;
+
+}
+
+/* Affectation des typos*/
+body {
+    font-family: var(--texte-font);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    background-color: var(--off-white);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--titre-font);
+    font-weight: 400;
+    color: var(--primary-color);
+}
+h1{
+    font-size: 64px;
+    line-height: 1.9;
+}
+h2{
+    font-size: 48px;
+    line-height: normal;
+}
+h3{
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: .24px;
+}
+h4{
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+.subtext {
+    color: var(--gray);
+    text-align: center;
+    font-family: var(--texte-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.46;
+}
+.para {
+    font-family: var(--texte-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--text-color);
+    text-align: center;
+}
+#container{
+    width: 1440px;
+    margin: auto;
+}
+/* HEADER */
+header {
+    background-color: #ECF494;
+    display: flex;
+    width: auto;
+    padding: 16px 466px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* NAVBAR PART*/
+#main_div_first {
+    border-bottom: 1px solid #F6F4EF;
+    background: #FFF;
+    color: #1a1a1a;
+    padding: 24px 60px;
+}
+
+.image_soso:hover {
+    cursor: pointer;
+    transform: rotateY(45deg);
+}
+
+#nav_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 146px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+#navbar_left_part {
+    width: 560px;
+}
+
+#navbar_right_part {
+    width: 343px;
+}
+
+#navbar_left_part ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 48px;
+    list-style-type: none;
+}
+
+#navbar_right_part ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    list-style-type: none;
+}
+
+#navbar_right_part ul li:nth-of-type(1) {
+    flex-grow: 3;
+}
+
+#navbar_right_part ul li:nth-of-type(2) {
+    flex-grow: 3;
+}
+
+#navbar_right_part ul li:nth-of-type(3) {
+    flex-grow: 3;
+}
+
+#navbar_right_part ul li:nth-of-type(4) {
+    flex-grow: 1;
+}
+
+li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+li a:hover {
+    cursor: pointer;
+    background-color: #EAF586;
+    color: #1a1a1a;
+    border: 1px groove;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#navbar_right_part ul button {
+    padding: 12px 28px;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+#navbar_right_part ul button:hover {
+    cursor: pointer;
+    background-color: #EAF586;
+    color: #1a1a1a;
+}
+
+/* MAIN PART 2  */
+#main_div_second {
+    background-color: #EAF586;
+}
+/* #main_div_second_top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+} */
+#main_div_second_top{
+    display: grid;
+    grid-template-columns: 1035px 389px;
+    column-gap: 20px;
+}
+
+#main_div_second_top_left{
+    background: url('/img/icons/unsplash__H1ZmUzwp9w.png') no-repeat;
+    background-position: 542px;
+    width: 100%;
+    height: 587px;
+}
+#main_div_second_top_right{
+    background: url('/img/icons/image\ 666.png') no-repeat;
+    width: 100%;
+    height: 586px;
+}
+
+#main_div_second_top h1{
+    font-size: 64px;
+    line-height: 1.3;
+    padding-top: 189px;
+    padding-left: 50px;
+}
+#main_div_second_top div button {
+    padding: 12px 28px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: #1a1a1a;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+#main_div_second_top div button:hover{
+    cursor: pointer;
+    background-color: #a5ad5c;
+    color: #1a1a1a; 
+    border: none;
+}
+
+#main_div_second_bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 48px;
+    margin-bottom: 60px;
+}
+#main_div_second_bottom div {
+    display: grid;
+}
+#main_div_second_bottom div h2 {
+    color: var(--black, #1A1A1A);
+    font-family: Value Serif Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+}
+#main_div_second_bottom div p {
+    color: var(--black-low-emphasis, rgba(26, 26, 26, 0.60));
+    font-family: GT Walsheim Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+#icon_message{
+    
+    margin-right:111px ;
+}
+#icon_gift{
+    margin-left: 26px;
+    margin-right: 83px;
+}
+#icon_star{
+    margin-left:13px ;
+    margin-right:90px ;
+}
+
+#icon_message img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-left: 60px;
+
+}
+#icon_message h2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-left: 18px;
+    padding-bottom: 6px;
+}
+#icon_message p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding-left: 18px;
+    padding-bottom: 60px;
+
+}
+#icon_gift img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#icon_gift h2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+#icon_gift p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding-left: 18px;
+    padding-bottom: 60px;
+}
+
+#icon_star img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-left: 10px;
+}
+
+#icon_star h2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+#icon_star p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding-left: 18px;
+    padding-bottom: 60px;
+}
