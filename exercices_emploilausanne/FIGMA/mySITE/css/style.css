@@ -696,7 +696,7 @@ li a:hover {
     border-radius: 16px;
     background: #F6F7D4;
     padding: 32px;
-     position: relative;
+    position: relative;
 }
 
 #box2 {
@@ -737,7 +737,7 @@ li a:hover {
     position: relative;
 }
 
-#cycleimage1{
+#cycleimage1 {
     position: absolute;
     top: -46px;
     right: 44px;
@@ -754,11 +754,13 @@ li a:hover {
     top: -48px;
     right: 22px;
 }
+
 #cycleimage4 {
     position: absolute;
     top: -46px;
     right: 44px;
 }
+
 #cycleimage5 {
     position: absolute;
     bottom: -41px;
@@ -766,23 +768,26 @@ li a:hover {
 }
 
 /* MAIN Part 5 */
-#main_div_five{
-background: url("/img/Frame\ 52984707.png") no-repeat;
-background-size: cover;
-height: 750px;
-padding: 80px 60px 60px 60px;
+#main_div_five {
+    background: url("/img/Frame\ 52984707.png") no-repeat;
+    background-size: cover;
+    height: 750px;
+    padding: 80px 60px 60px 60px;
+    margin: 120px 60px 60px 60px;
 }
-#main_div_five h2{
+
+#main_div_five h2 {
     color: var(--black, #1A1A1A);
-font-family: Value Serif Pro;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 24px;
+    font-family: Value Serif Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
 
 }
-#main_div_five button{
+
+#main_div_five button {
     border-radius: 8px;
     border: 1px solid var(--black, #1A1A1A);
     background: var(--yellow, #EAF586);
@@ -790,10 +795,103 @@ margin-bottom: 24px;
     padding: 8px 38px;
     box-shadow: 5px 5px rgb(231, 223, 223);
 }
-#main_div_five button:hover{
+
+#main_div_five button:hover {
     cursor: pointer;
     background-color: #bbca33;
     color: white;
     border: none;
     box-shadow: none;
+}
+
+/* MAIN PART 6 */
+#main_div_six {
+    background-color: #fbfbf4;
+}
+#healthline {
+    margin-left: 528px;
+    margin-top: 415px;
+    margin-bottom: 32px;
+}
+#quote {
+    margin-left: 346px;
+    margin-bottom: 40px;
+}
+#main_div_six_top_explication {
+    margin-left: 300px;
+    margin-bottom: 200px;
+}
+#main_div_six_top_explication p {
+    margin-right: 357px;
+    color: var(--typography-medium-emphasis, rgba(28, 28, 28, 0.75));
+    text-align: center;
+    font-family: GT Walsheim Pro;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#main_div_six_top_explication button{
+    display: flex;
+    margin-left: 335px;
+    gap: 3px;
+    border: none;
+}
+#main_div_six_bottom h2{
+    color: var(--black, #1A1A1A);
+text-align: center;
+font-family: Value Serif Pro;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#main_div_six_bottom h4{
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 4px;
+text-transform: uppercase;
+}
+#main_div_six_bottom_imagediv {
+    display: flex;
+    margin: 48px 60px 120px 60px;
+    gap: 10px;   
+}
+#image_yoga{
+    background: url("/img/CARDyoga.png") no-repeat;
+    background-size: cover;
+    width: 424px;
+    height: 496px;
+    border-radius: 16px;
+}
+#main_div_six_bottom_imagediv div h4{
+    color: #FFF;
+    margin-top: 391px;
+    margin-left:35px ;
+    text-align: left;
+}
+#main_div_six_bottom_imagediv div h6{
+    color: #FFF;
+    margin-top: 4px;
+    margin-left:35px ;
+}
+#image_jam{
+    background: url("/img/CARDjam.png") no-repeat;
+    background-size: cover;
+    width: 424px;
+    height: 496px;
+    border-radius: 16px;
+}
+#image_tomate{
+    background: url("/img/CARDtomate.png") no-repeat;
+    background-size: cover;
+    width: 424px;
+    height: 496px;
+    border-radius: 16px;
+
 }
