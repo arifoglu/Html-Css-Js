@@ -308,7 +308,7 @@
                     <p>Sed ut perspiciatis
                          unde omnis iste natus error sit voluptatem <br> accusantium 
                          doloremque laudantium, totam rem aperiam.</p>
-                         <button>
+                         <button onclick="alert('this is not working yet')">
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
                                 <circle cx="4.49966" cy="4" r="4" fill="#1C1C1C"/>
                               </svg>
@@ -345,17 +345,25 @@
         </div>
         <!-- main part 7 -->
         <div id="main_div_seven">
-            <h3>#All the help you need</h3>
-            <h4>We know you are curious!</h4>
-            <div>
-                <h3>How do I choose the right supplement for my needs?</h3>
-                <p>How do I choose the right supplement for my needs?</p>
+            <div id="main_div_seven_top">
+                <h3>#All the help you need</h3>
+                <h4>We know you are curious!</h4>
             </div>
-            <div>
-                <p>Can I take multiple supplements together?</p>
+            <div id="main_div_seven_bottom">
+                <select name="first" id="howdo">
+                    <option value="How do I choose the right supplement for my needs?">How do I choose the right supplement for my needs?</option>
+                </select><br>
+                <select name="second" id="canItake">
+                    <option value="Can I take multiple supplements together?">Can I take multiple supplements together?</option>
+                </select><br>
+                <select name="third" id="">
+                    <option value="Are your supplements suitable for vegetarians/vegans??">Are your supplements suitable for vegetarians/vegans??</option>
+                </select><br>
+                <select name="fourth" id="">
+                    <option value="Still have questions?">Still have questions? <span style="text-decoration: underline;">Visit the FAQs page</span> </option>
+                </select>
             </div>
-            <div><p>Are your supplements suitable for vegetarians/vegans?</p></div>
-            <div><p>Still have questions?Visit the FAQs page</p></div>
+            
         </div>
         <!-- main part 8 -->
         <div id="main_div_nine">
@@ -364,16 +372,16 @@
                 <h4>Meet Our Community</h4>
                 <h5>Join the @Soso and share your voice with us.</h5>
                 <div class="logo">
-                    <h5>Instagram</h5>
-                    <h6>@SoSo</h6>
+                    <img src="/img/icons/instagram.png" alt="">
+                    <h5>Instagram<br><span>@SoSo</span></h5> 
                 </div>
                 <div class="logo">
-                    <h5>Tiktok</h5>
-                    <h6>@SoSo</h6>
+                    <img src="/img/icons/tiktok.png" alt="">
+                    <h5>Tiktok<br><span>@SoSo</span></h5>
                 </div>
                 <div class="logo">
-                    <h5>Twitter</h5>
-                    <h6>@SoSo</h6>
+                    <img src="/img/icons/twitter.png" alt="">
+                    <h5>Twitter<br><span>@SoSo</span></h5>   
                 </div>
             </div>
             <div id="main_div_nine_right"></div>

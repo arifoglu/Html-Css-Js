@@ -627,9 +627,7 @@ li a:hover {
 
 .explain p {
     margin: 24px 32px 24px 32px;
-
 }
-
 
 /* MAIN PART 4  */
 #main_div_fourth {
@@ -808,19 +806,23 @@ li a:hover {
 #main_div_six {
     background-color: #fbfbf4;
 }
+
 #healthline {
     margin-left: 528px;
     margin-top: 415px;
     margin-bottom: 32px;
 }
+
 #quote {
     margin-left: 346px;
     margin-bottom: 40px;
 }
+
 #main_div_six_top_explication {
     margin-left: 300px;
     margin-bottom: 200px;
 }
+
 #main_div_six_top_explication p {
     margin-right: 357px;
     color: var(--typography-medium-emphasis, rgba(28, 28, 28, 0.75));
@@ -831,67 +833,201 @@ li a:hover {
     font-weight: 500;
     line-height: normal;
 }
-#main_div_six_top_explication button{
+
+#main_div_six_top_explication button {
     display: flex;
     margin-left: 335px;
     gap: 3px;
     border: none;
+    margin-top: 32px;
 }
-#main_div_six_bottom h2{
+
+#main_div_six_top_explication button:hover {
+    cursor: pointer;
+}
+
+#main_div_six_bottom h2 {
     color: var(--black, #1A1A1A);
-text-align: center;
-font-family: Value Serif Pro;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    text-align: center;
+    font-family: Value Serif Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-#main_div_six_bottom h4{
-color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 4px;
-text-transform: uppercase;
+
+#main_div_six_bottom h4 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
+
 #main_div_six_bottom_imagediv {
     display: flex;
     margin: 48px 60px 120px 60px;
-    gap: 10px;   
+    gap: 10px;
 }
-#image_yoga{
+
+#image_yoga {
     background: url("/img/CARDyoga.png") no-repeat;
     background-size: cover;
     width: 424px;
     height: 496px;
     border-radius: 16px;
 }
-#main_div_six_bottom_imagediv div h4{
+
+#main_div_six_bottom_imagediv div h4 {
     color: #FFF;
     margin-top: 391px;
-    margin-left:35px ;
+    margin-left: 35px;
     text-align: left;
 }
-#main_div_six_bottom_imagediv div h6{
+
+#main_div_six_bottom_imagediv div h6 {
     color: #FFF;
     margin-top: 4px;
-    margin-left:35px ;
+    margin-left: 35px;
 }
-#image_jam{
+
+#image_jam {
     background: url("/img/CARDjam.png") no-repeat;
     background-size: cover;
     width: 424px;
     height: 496px;
     border-radius: 16px;
 }
-#image_tomate{
+
+#image_tomate {
     background: url("/img/CARDtomate.png") no-repeat;
     background-size: cover;
     width: 424px;
     height: 496px;
     border-radius: 16px;
+
+}
+
+/* MAIN PART 7 */
+#main_div_seven {
+    background-color: #fbfbf4;
+}
+
+#main_div_seven_top {
+    margin-top: 120px;
+    margin-bottom: 12px;
+}
+
+#main_div_seven_top h3 {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-wrap: break-word
+}
+
+#main_div_seven_top h4 {
+    text-align: center;
+    color: #1A1A1A;
+    font-size: 48px;
+    font-family: Value Serif Pro;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+#main_div_seven_bottom {
+    margin: 60px 60px 120px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main_div_seven_bottom select {
+    border: none;
+    color: #1A1A1A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    background-color: #fbfbf4;
+    margin: 30px 30px;
+
+}
+
+/* MAIN PART 8 */
+#main_div_nine {
+    display: flex;
+}
+
+#main_div_nine_left {
+    background-color: #EAF586;
+    width: 720px;
+    height: 800px;
+}
+
+#main_div_nine_left h3 {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 12px;
+}
+
+#main_div_nine_left h4 {
+    color: var(--black, #1A1A1A);
+    text-align: center;
+    font-family: Value Serif Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+
+}
+
+#main_div_nine_left h5 {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-left: 35px;
+}
+
+#main_div_nine_left .logo h5 {
+    margin-left: 33px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 297px;
+    margin-top: 88px;
+}
+
+.logo img:hover {
+    cursor: pointer;
+    border: none;
+}
+
+#main_div_nine_right {
+
+    background: url("/img/Image.png") no-repeat;
+    background-size: cover;
+    width: 720px;
+    height: 800px;
 
 }
