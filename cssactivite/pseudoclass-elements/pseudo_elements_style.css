@@ -1,0 +1,33 @@
+#trying p{
+    display: none;
+}
+#trying:hover p{
+display: block;
+cursor: pointer;
+}
+h1::after {
+    content: "---ces mots ont été ajouté par AFTER---";
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 20px;
+    color: brown;
+    cursor: pointer;
+}
+h2::before {
+    content: "---ces mots ont été ajouté par BEFORE---";
+    text-decoration: underline;
+    font-weight: 400;
+    color: brown;
+    cursor: pointer;
+}
+h3::first-letter{
+    font-size: xx-large;
+    color: brown;
+}
+p::first-line{
+    color: brown;
+}
+h3::selection{
+    background-color: rgb(218, 221, 221);
+}
+
