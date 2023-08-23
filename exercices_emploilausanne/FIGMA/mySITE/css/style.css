@@ -947,19 +947,45 @@ li a:hover {
     display: flex;
     flex-direction: column;
 }
-
-#main_div_seven_bottom select {
-    border: none;
-    color: #1A1A1A;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    background-color: #fbfbf4;
-    margin: 30px 30px;
-
+.select{
+    padding: 20px;
 }
+.select p {
+    display: none;
+} 
+.select:hover p{
+    display: block;
+    cursor: pointer;
+}
+.select{
+    display: flex;
+}
+
+.croix{
+    display: none;
+    position: absolute;
+    right: 100px;
+    margin-top: -8px;
+}
+
+.add{  
+    position: absolute;
+    right: 100px;
+    margin-top: -8px;
+}
+.add:hover {
+    cursor: pointer;
+}
+
+.select:hover .add{
+    display: none;
+}
+.select:hover .croix{
+    display: block;
+}
+
+
+
 
 /* MAIN PART 8 */
 #main_div_nine {
@@ -1031,3 +1057,5 @@ li a:hover {
     height: 800px;
 
 }
+
+
