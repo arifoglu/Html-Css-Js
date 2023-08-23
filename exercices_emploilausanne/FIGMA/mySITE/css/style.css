@@ -950,8 +950,12 @@ li a:hover {
 .select{
     padding: 20px;
 }
+.select h3 {
+    margin-left: 64px;
+} 
 .select p {
     display: none;
+    margin-left: 64px;
 } 
 .select:hover p{
     display: block;
@@ -964,13 +968,13 @@ li a:hover {
 .croix{
     display: none;
     position: absolute;
-    right: 100px;
+    left: 1752px;
     margin-top: -8px;
 }
 
 .add{  
     position: absolute;
-    right: 100px;
+    left: 1752px;
     margin-top: -8px;
 }
 .add:hover {
@@ -1035,12 +1039,12 @@ li a:hover {
 }
 
 #main_div_nine_left .logo h5 {
-    margin-left: 33px;
+    margin-left: 30px;
 }
 
 .logo {
     display: flex;
-    margin-left: 297px;
+    margin-left: 254px;
     margin-top: 88px;
 }
 
