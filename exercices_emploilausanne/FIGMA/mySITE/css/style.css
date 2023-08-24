@@ -142,7 +142,7 @@ h4 {
     text-align: center;
 }
 
-#container {
+#container1 {
     width: clamp(300px, 100%, 1440px);
     margin: auto;
 }
@@ -230,12 +230,13 @@ header {
 
 li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.5px;
     text-decoration: none;
+    color: black;
 }
 
 li a:hover {
@@ -243,7 +244,7 @@ li a:hover {
     background-color: #EAF586;
     color: #1a1a1a;
     border: 1px groove;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
 }
 
@@ -929,7 +930,8 @@ li a:hover {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 4px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    padding-top: 120px;
 }
 
 #main_div_seven_top h4 {
@@ -947,52 +949,34 @@ li a:hover {
     flex-direction: column;
 }
 .select{
-    padding: 20px;
-}
-.select h3 {
-    margin-left: 64px;
-} 
-.select p {
-    display: none;
-    margin-left: 64px;
-} 
-.select:hover p{
-    display: block;
-    cursor: pointer;
-}
-.select{
     display: flex;
+    justify-content: space-between;
+    padding: 30px;
 }
-
-.croix{
-    display: none;
-    position: absolute;
-    left: 1752px;
-    margin-top: -8px;
+.select_left{
+    margin-left: 95px;
 }
-
-.add{  
-    position: absolute;
-    left: 1752px;
-    margin-top: -8px;
+.select_right1{
+    margin-left: 322px;
 }
-.add:hover {
-    cursor: pointer;
+.select_right2{
+    margin-left: 437px;
 }
-
-.select:hover .add{
-    display: none;
+.select_right3{
+    margin-left: 295px;
 }
-.select:hover .croix{
-    display: block;
+.select_right4{
+    margin-left: 473px;
 }
-
-
+#demo1,#demo2,#demo3,#demo4{
+    margin-left: 127px;  
+}
 
 
 /* MAIN PART 8 */
 #main_div_nine {
     display: flex;
+    margin-top: 120px;
 }
 
 #main_div_nine_left {

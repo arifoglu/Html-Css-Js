@@ -6,11 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>figma_page</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+  crossorigin="anonymous"
+/>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <div id="container">
+  <div id="container1">
     <!-- header part -->
     <header>
       <h4>Rated 4.8-stars across 20k+ reviews</h4>
@@ -70,6 +76,8 @@
         </div>
       </nav>
     </div>
+
+
     <!-- main part 2 -->
     <div id="main_div_second">
       <div id="main_div_second_top">
@@ -415,16 +423,7 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-    <!-- main part 7 -->
+    <!-- main part 7  -->
     <div id="main_div_seven">
       <div id="main_div_seven_top">
         <h3>#All the help you need</h3>
@@ -432,126 +431,169 @@
       </div>
       <div id="main_div_seven_bottom">
         <div class="select">
-          <div class="selectdivs">
-            <h3>How do I choose the right supplement for my needs?</h3>
-            <p>We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and
-              lifestyle factors. <br> Based on your responses, we provide tailored recommendations to help you find the
-              supplements that best suit your needs.</p>
+          <div class="select_left">
+            <h3>
+            How do I choose the right supplement for my needs?
+            </h3>
           </div>
-          <div id="svgdivs">
-            <svg class="croix" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-              fill="none">
-              <path d="M1.06396 1.52191L14.936 14.4893M1.75537 15.2008L8.00059 7.99992L14.2458 0.799072"
-                stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
+          <div class="select_right1">
+            <button 
+                  type="button" 
+                  class="btn"
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#demo1">
+
+              <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            
+          </div><br>
+        </div>
+        <div id="demo1" class="collapse">
+          We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and <br>
+            lifestyle factors.  Based on your responses, we provide tailored recommendations to help you find the <br>
+            supplements that best suit your needs.
         </div>
         <div class="select">
-          <div class="selectdivs">
-            <h3>Can I take multiple supplements together?</h3>
-            <p>We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and
-              lifestyle factors. <br> Based on your responses, we provide tailored recommendations to help you find the
-              supplements that best suit your needs.</p>
+          <div class="select_left">
+            <h3>
+              Can I take multiple supplements together?
+            </h3>
           </div>
-          <div id="svgdivs">
-            <svg class="croix" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-              fill="none">
-              <path d="M1.06396 1.52191L14.936 14.4893M1.75537 15.2008L8.00059 7.99992L14.2458 0.799072"
-                stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
+          <div class="select_right2">
+            <button 
+                  type="button" 
+                  class="btn"
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#demo2">
+
+              <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            
+          </div><br>
+        </div>
+        <div id="demo2" class="collapse">
+          We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and <br>
+            lifestyle factors.  Based on your responses, we provide tailored recommendations to help you find the <br>
+            supplements that best suit your needs.
         </div>
         <div class="select">
-          <div class="selectdivs">
-            <h3>Are your supplements suitable for vegetarians/vegans?</h3>
-            <p>We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and
-              lifestyle factors. <br> Based on your responses, we provide tailored recommendations to help you find the
-              supplements that best suit your needs.</p>
-
+          <div class="select_left">
+            <h3>
+              Are your supplements suitable for vegetarians/vegans?
+            </h3>
           </div>
-          <div>
-            <svg class="croix" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-              fill="none">
-              <path d="M1.06396 1.52191L14.936 14.4893M1.75537 15.2008L8.00059 7.99992L14.2458 0.799072"
-                stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
+          <div class="select_right3">
+            <button 
+                  type="button" 
+                  class="btn"
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#demo3">
+              <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div><br>
+        </div>
+        <div id="demo3" class="collapse">
+          We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and <br>
+            lifestyle factors.  Based on your responses, we provide tailored recommendations to help you find the <br>
+            supplements that best suit your needs.
         </div>
         <div class="select">
-          <div>
-            <h3>Still have questions?Visit the FAQs page</h3>
-            <p>We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and
-              lifestyle factors.
-              Based on your responses, we provide tailored recommendations to help you find the supplements that best
-              suit your needs.</p>
+          <div class="select_left">
+            <h3>
+              Still have questions?Visit the FAQs page
+            </h3>
           </div>
-          <div>
-            <svg class="croix" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-              fill="none">
-              <path d="M1.06396 1.52191L14.936 14.4893M1.75537 15.2008L8.00059 7.99992L14.2458 0.799072"
-                stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
+          <div class="select_right4">
+            <button 
+                  type="button" 
+                  class="btn"
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#demo4">
+
+              <svg class="add" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 6.66821V25.3349" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.66797 16.0002H25.3346" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            
+          </div><br>
         </div>
-      </div>
-    </div>
+        <div id="demo4" class="collapse">
+          We offer a personalized quiz that takes into account your specific health goals, dietary preferences, and <br>
+            lifestyle factors.  Based on your responses, we provide tailored recommendations to help you find the <br>
+            supplements that best suit your needs.
+        </div>
+      </div> 
+
+   
+
+
+    
 
 
 
 
 
-
-
-
-
-
-
+     </div>
     <!-- main part 8 -->
     <div id="main_div_nine">
-      <div id="main_div_nine_left">
-        <h3>Follow Us</h3>
-        <h4>Meet Our Community</h4>
-        <h5>Join the @Soso and share your voice with us.</h5>
-        <div class="logo">
-          <img src="/img/icons/instagram.png" alt="">
-          <h5>Instagram<br><span>@SoSo</span></h5>
+       <div id="main_div_nine_left">
+    <h3>Follow Us</h3>
+    <h4>Meet Our Community</h4>
+    <h5>Join the @Soso and share your voice with us.</h5>
+    <div class="logo">
+      <img src="/img/icons/instagram.png" alt="">
+      <h5>Instagram<br><span>@SoSo</span></h5>
+    </div>
+    <div class="logo">
+      <img src="/img/icons/tiktok.png" alt="">
+      <h5>Tiktok<br><span>@SoSo</span></h5>
+    </div>
+    <div class="logo">
+      <img src="/img/icons/twitter.png" alt="">
+      <h5>Twitter<br><span>@SoSo</span></h5>
+    </div>
         </div>
-        <div class="logo">
-          <img src="/img/icons/tiktok.png" alt="">
-          <h5>Tiktok<br><span>@SoSo</span></h5>
-        </div>
-        <div class="logo">
-          <img src="/img/icons/twitter.png" alt="">
-          <h5>Twitter<br><span>@SoSo</span></h5>
-        </div>
-      </div>
-      <div id="main_div_nine_right"></div>
+        <div id="main_div_nine_right">
+    </div>
     </div>
   </div>
-</body>
 
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"
+></script>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
