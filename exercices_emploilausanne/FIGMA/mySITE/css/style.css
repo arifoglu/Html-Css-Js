@@ -245,7 +245,7 @@ li a:hover {
     color: #1a1a1a;
     border: 1px groove;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 #navbar_right_part ul button {
