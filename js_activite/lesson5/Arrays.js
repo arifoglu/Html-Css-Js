@@ -121,9 +121,72 @@ fruitEurope.splice(3,0,"THIS PART");  /// 3 is position 0 is for removed
 console.log(fruitEurope); 
 //['mango', 'ananas', 'peach', 'THIS PART', 'avocat', 'peach', 'strawberry', 'abricot', 'raisin]
 
-///// slice()
-let mySlice = fruitEurope.slice(3,);
+///// slice() this methodes create new Array
+let mySlice = fruitEurope.slice(3); 
 console.log(mySlice);
+let mySlice2 = fruitEurope.slice(4,7);
+console.log(mySlice2);
+
+///////// sort()  sorts alphabetically
+console.log(fruitEurope.sort());
+/// reverse() 
+console.log(fruitEurope.reverse());
+//////for sort we can use this function
+let points1 =[20,30,40,5,10,100];
+let use1 = (a,b)=> {return (a - b)}; //we add this function
+console.log(points1.sort(use1));
+
+console.log(points1[0]);                 /// lowest values  5
+console.log(points1[points1.length-1]); //// highest values 100
+
+///// Math.max.apply()  Math.min.apply()
+let use2 = (arr)=> {return Math.max.apply(null,arr)};
+let use3 = (arr)=> {return Math.min.apply(null,arr)}
+console.log(use2(points1));   //// highest values 100     
+console.log(use3(points1));   /// lowest values  5
+
+////////////////////////////
+const cars = [
+    {type:"Volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+];
+let myCarList = (a,b)=> {return a.year - b.year};
+console.log(cars.sort(myCarList));
+
+//////////////////// map()        flatMap()
+const numbers1 = [45, 4, 9, 16, 25];
+function myMap(value,index,array){return value * 2 }
+const numbers2 =numbers1.map(myMap);
+console.log(numbers2);
+const numbers3 = numbers1.flatMap((x)=> x * 3);
+console.log(numbers3);
+const numbers4 = numbers1.map((p) => p * 4 );
+console.log(numbers4);
+
+//////////////////// filter()
+const childList = numbers1.filter((p)=> p < 18);
+const adultList = numbers1.filter((p)=> p > 18);
+const oldAgeList = numbers1.filter((p,index)=> p > 4 && index > 3);// two parameters
+const theAgeList = numbers1.filter((p,index)=> p > 18 && index < 3);
+
+console.log(childList);
+console.log(adultList);
+console.log(oldAgeList);
+console.log(theAgeList);
+
+///////////////////// every() detected  true or false 
+const oldest = numbers1.every((p)=> p > 60);
+console.log(oldest);
+
+//////////////////// some()   detected true or false
+const oldest2 = numbers1.some((p)=> p > 18);
+console.log(oldest2);
+
+////////////////////// indexOf() position of element in the array
+console.log(numbers1.indexOf(25));
+
+
 
 
 
