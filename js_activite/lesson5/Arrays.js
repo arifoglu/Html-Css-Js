@@ -185,8 +185,29 @@ console.log(oldest2);
 
 ////////////////////// indexOf() position of element in the array
 console.log(numbers1.indexOf(25));
+//////////////////////  lastIndexOf()
+console.log(numbers1.lastIndexOf(4));
 
+//////////////////////// find() 
+let myFind = numbers1.find((p)=> p < 10 );
+console.log(myFind);
 
+//////////////////////// Array.from() to create an array
+let myList2 = Array.from("ABCD");
+console.log(myList2);
+
+////////////////////////Array.includes()
+console.log(numbers1.includes(4)); /// true
+console.log(numbers1.includes(2)); /// false
+
+//////////////////////// ... spread //////////////////
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const myTotal = [...q1,...q2,...q3,...q4];
+console.log(myTotal);
 
 
 
