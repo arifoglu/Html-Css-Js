@@ -1,7 +1,7 @@
 console.log(Boolean(10 > 9));  //true
 console.log(Boolean(10 < 9));  //false
 //////////////////////////////////////
-let x = 6;
+let x = 5;
 console.log(x == 5); //true
 console.log(x == 8); //false
 console.log(x == "5"); //true
