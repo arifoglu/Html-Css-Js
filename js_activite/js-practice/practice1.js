@@ -1,6 +1,9 @@
+///////////////////////JAVASCRIPT ////////////////////////////
+document.getElementById("js_part1").style.fontSize = "22px"
+//
 let legumes = ["poivron","tomate","pomme dt","aubergine","courgette","champignon"];
-
 document.getElementById("legumeArray").innerHTML = "let legumes = " + " [ "  + legumes  +  " ] " ;
+
 /////////////////////// DIFFERENTS METHODS //////////////////
 // length
 let legumesTotal = legumes.length;
@@ -72,3 +75,6 @@ console.log(legumes_fruitsReverse);
 let listIndex = legumes_fruitsReverse.indexOf(`${legumesRandom}`);
 document.getElementById("demo14").innerHTML ="<strong>indexOf()</strong> " + `<strong> ${legumesRandom} </strong>` + " index = " + listIndex ;
 console.log(listIndex);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
