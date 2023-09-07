@@ -18,7 +18,5 @@ ${sum / numerosLength }`;
 console.log(sum);
 
 // 
-let news = 0;
 
-console.log(news);
 
