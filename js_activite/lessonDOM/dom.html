@@ -8,7 +8,8 @@
     <title>DOMPAGE</title>
 </head>
 
-<body>
+<body >
+    <!-- getElementBY () -->
     <div>
         <p id="intro">HTML5</p>
         <p class="myCss">CSS3</p>
@@ -21,8 +22,9 @@
         <p id="last"></p><br>
         <h1 id="myTitle"></h1><br>
     </div>
-    <div>
 
+    <!-- form validaton -->
+    <div>
         <form action="" id="frm1">
             FirstName : <input type="text" value="" name="fname">
         </form>
@@ -35,18 +37,38 @@
         </form><br>
     </div>
 
+    <!-- changing css -->
     <div>
         Numeeros : <input type="number" id="numb" required>
         <button type="button" onclick="myFunction()">Click</button>
         <p id="result"></p>
     </div>
 
+    <!--ONCLICK this -->
     <div>
         <h6 id="myLine"></h6>
         <button id="red" type="button" onclick="myFunctionRed()">red</button>
         <button id="blue" type="button" onclick="myFunctionBlue()">blue</button>
     </div>
 
+    <!-- ONCLICK -->
+    <div onload="myFontSize()">
+        <h1 onclick="changeText(this)">Click on this text</h1>
+        <button type="button" onclick="myClick(this)">click</button>
+        <h2 id="myH2"></h2>
+        <button id="newBtn" type="button">click</button><br><br>
+
+        <button id="first" type="button">first</button>
+        <button id="second" type="button">second</button>
+        <h4 id="newP">C'est mon choix</h4>
+    </div>
+
+    <!-- ONCHANGE -->
+    <div>
+       NAME: <input type="text" id="input1"
+       onchange="myShape()"
+       >
+    </div>
 
     <script src="/lessonDOM/dom.js"></script>
 </body>

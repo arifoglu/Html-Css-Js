@@ -81,3 +81,14 @@ let lettresArray = lettres.split(",");
 console.log(lettresArray);
 console.log(lettresArray[0].toUpperCase().padEnd(3,"++"));
 console.log(lettresArray[1].toUpperCase().padStart(2,"+"));
+
+// indexOf()
+let textOne = "Ce ligne a été fait par js"
+let myIndex = textOne.indexOf("été");
+console.log(myIndex);
+
+console.log(textOne.indexOf("lignet"));
+
+console.log(textOne.indexOf("é",15));
+
+console.log(textOne.search("gn"));

@@ -63,3 +63,65 @@ function myFunctionBlue(){
     myCss.color = "blue";
     document.getElementById("blue").style.backgroundColor = "blue";
 };
+
+////////////////////////////////////DOM EVENTS////////////////////////
+
+/////// onclick &&  this
+
+function changeText(id){
+    id.innerHTML = "ooops";
+};
+function myClick(id){
+    id.style.backgroundColor = "green";
+    id.style.color = "yellow";
+    document.getElementById("myH2").innerHTML = "this is an event" + " " +
+    Date();
+};
+
+///////   onclick()
+
+function myClick2(){
+    document.getElementById("myH2").innerHTML = Date()
+}
+document.getElementById("newBtn").onclick = myClick2;
+
+//////    onclick()  
+
+// on defini des variables
+let firstStyle = document.getElementById("first").style;   
+let secondStyle = document.getElementById("second").style;
+let newPStyle   = document.getElementById("newP").style;
+// on defini des functions
+document.getElementById("first").onclick = ()=>
+{
+    firstStyle.backgroundColor = "red";
+    newPStyle.color = "red";
+    // racoursir pour if --  ()? result1 : result2
+    // (secondStyle.backgroundColor === "blue")? secondStyle.backgroundColor = "white" : false ; 
+   if(secondStyle.backgroundColor === "blue"){
+       secondStyle.backgroundColor = "white";
+   };
+};
+document.getElementById("second").onclick = ()=>
+{
+    secondStyle.backgroundColor = "blue";
+    newPStyle.color = "blue";
+    // racoursir pour if --  ()? result1 : result2
+    // (firstStyle.backgroundColor === "red")? firstStyle.backgroundColor = "white" : false ; 
+    if( firstStyle.backgroundColor === "red"){
+        firstStyle.backgroundColor = "white"
+    } ;
+};
+
+//////      onload() and onunload()
+function myFontSize(){
+    document.getElementById("myDiv").style.fontSize= "46px";
+};
+
+/////        onchange()
+function myShape(){
+    let x = document.getElementById("input1");
+    x.value = x.value.toUpperCase();
+};
+
+

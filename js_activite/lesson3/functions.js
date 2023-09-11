@@ -21,3 +21,6 @@ document.getElementById("heat").innerHTML = myDegre + "°";
 //you can write directly function in the code 
 document.getElementById("heat2").innerHTML = myfunction3(25) + "°";
 
+let calcul = (p1,p2)=> p1 * p2;
+console.log(calcul(3,8));
+

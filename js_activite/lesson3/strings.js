@@ -7,6 +7,10 @@ document.getElementById("Pstrings").innerHTML = text ;
 
 let x = "john";
 let y = new String("john");
+console.log(x==y);
 console.log(typeof x);
 console.log(typeof y);
-console.log(x==y);
+
+console.log(y[1]);
+
+
