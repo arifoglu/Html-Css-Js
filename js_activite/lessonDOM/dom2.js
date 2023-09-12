@@ -50,4 +50,19 @@ document.getElementById("event2").addEventListener("mouseover",()=>{
 // "resize"
 window.addEventListener("resize",()=>{
     document.getElementById("demo3").innerHTML = Math.random();
+})
+//
+let firstInput = document.getElementById("firstName").value;
+let secondInput = document.getElementById("lastName").value;
+
+document.getElementById("myButton").addEventListener("click",function(){
+    myFunction(firstInput,secondInput);
 });
+function myFunction(a,b){
+    document.getElementById("showNames").innerHTML = a + b ;
+};
+
+/// removeEventListener()
+let newTime = new Date();
+console.log(newTime);
+ 
