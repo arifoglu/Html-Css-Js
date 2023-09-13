@@ -9,3 +9,8 @@ div#container{
     margin: 10px auto;
     background-color: #faebd7;
 }
+img.anim{
+    transition: all 0.5s; 
+    scale: (1,2);
+    margin-top: 200px;  	
+}
