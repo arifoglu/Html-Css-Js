@@ -32,5 +32,5 @@ const element = document.getElementById("div1");
 element.appendChild(paragraf);
 
 ////// remove()
-const myRemove = document.getElementById("p1");
- myRemove.remove();
+const elmnt =document.getElementById("myH6");
+elmnt.remove();
