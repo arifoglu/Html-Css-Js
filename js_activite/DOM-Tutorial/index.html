@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/DOM-Tutorial/styles.css">
 </head>
 <body>
     <div id="wrapper">
@@ -13,6 +13,7 @@
 	    	<div id="page-banner">
 	    		<h1 class="title">Search</h1>
           <p>Books </p>
+		  <a href="https://www.google.com/">google</a>
           <form id="search-books">
             <input type="text" placeholder="Search books..." />
           </form>
@@ -40,11 +41,13 @@
 	    	</ul>
 	    </div>
 	    <form id="add-book">
+			<input type="checkbox" name="" id="hide">
+			<label for="hide">Hide All books</label>
 	    	<input type="text" placeholder="Add a book..." />
 	    	<button>Add</button>
 	    </form>
     </div>
 
-    <script src="/app.js"></script>
+    <script src="/DOM-Tutorial/app.js"></script>
 </body>
 </html>

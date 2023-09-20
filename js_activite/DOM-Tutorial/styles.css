@@ -114,6 +114,18 @@ h1, h2{
     display: block;
     clear: both;
 }
+#add-book #hide{
+    width: 30px;
+}
+
+#add-book label{
+    width: 52px;
+}
+
+
+
+
+
 
 /*
 #tabbed-content li{

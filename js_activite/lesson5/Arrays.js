@@ -1,3 +1,4 @@
+
 //// we can also defined after a array
 const array1 = [];
 array1[0] = "apple";
@@ -209,7 +210,9 @@ const q4 = ["Oct", "Nov", "May"];
 const myTotal = [...q1,...q2,...q3,...q4];
 console.log(myTotal);
 
-
+////////////////////////////
+const voitures = ["Audi", "Mazda", "BMW"];    
+console.log(voitures[1]);
 
 
 
