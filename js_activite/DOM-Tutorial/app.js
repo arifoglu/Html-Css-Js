@@ -141,7 +141,7 @@ addForm.addEventListener("submit",function(e){
 
 });
     
-    ///               filter  list
+    ///               filter  list ( search an item)
 
     const searchBar = document.forms["search-books"].querySelector("input");
     searchBar.addEventListener("keyup",function(e){
@@ -157,3 +157,22 @@ addForm.addEventListener("submit",function(e){
             }
         })
     })
+
+    //////////                tab content
+
+    const tabs = document.querySelector('.tabs');
+    //console.log(tabs);  // <ul class="tabs"></ul>
+    const panels = document.querySelectorAll('.panel');
+    //console.log(panels); // NodeList [ div#about.panel.active, div#contact.panel ]
+    tabs.addEventListener('click', (e) => {
+      if(e.target.tagName == 'LI'){
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        Array.from(panels).forEach((panel) => {
+          if(panel == targetPanel){
+            panel.classList.add('active');
+          }else{
+            panel.classList.remove('active');
+          }
+        });
+      }
+    });
