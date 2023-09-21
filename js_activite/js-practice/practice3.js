@@ -11,9 +11,7 @@ window.onload = function(){
     input1 = Number(document.getElementById("numero1").value) ; 
     input2 = Number( document.getElementById("numero2").value);
     
-    if(input1 | input2 == undefined ){
-        alert("you have to add a number")
-    }else if(input1 < input2 ){
+    if(input1 < input2 ){
         show.innerHTML = input2;
         document.getElementById("numero2").style.color = "green" ; 
     } else if( input1 > input2){
