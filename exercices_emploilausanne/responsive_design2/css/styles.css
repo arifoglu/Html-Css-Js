@@ -16,7 +16,7 @@ figure {
     display: block;
 }
 
-div.container {}
+
 
 header {
     min-height: 80px;
@@ -90,7 +90,7 @@ nav ul {
     justify-content: flex-end;
 }
 
-nav ul li {}
+
 
 nav ul li a {
     display: block;
@@ -176,7 +176,7 @@ footer article img {
 
 /* nouvelle  format a été créé */
 
-@media (max-width:600px){
+@media (max-width:780px){
     nav ul{
         display: flex;
         flex-direction: column;
