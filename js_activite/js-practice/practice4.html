@@ -20,14 +20,19 @@
             border-radius: 6px;
             font-size: 22px;
         }
-       
+        input[type="number"]:not(:focus):not(:placeholder-shown):invalid {
+         border-color: red;
+        }
+        input[type="number"]:not(:focus):not(:placeholder-shown):invalid~.error-message {
+            display: block;
+        }
     </style>
      <div id="container">
         <!--compare areas-->
      <h2>Which one is greater</h2>
-     <input type="number"  id="numero1" value="" placeholder="please enter any number" ></input>
-     <input type="number"  id="numero2" value="" placeholder="please enter other number" ></input>
-     <input type="number"  id="numero3" value="" placeholder="please enter new other number" ></input>
+     <input type="number"  id="numero1" value="" placeholder="please enter number" required></input>
+     <input type="number"  id="numero2" value="" placeholder="please enter number" ></input>
+     <input type="number"  id="numero3" value="" placeholder="please enter number" ></input>
      <!--this area will appear as a result-->
      <p id="result"></p>
      <!--when this button onclick become, it will work and compared what entered tree number-->
