@@ -26,26 +26,6 @@ const menuAnim = function(){
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.onload =function(){
     menuAnim();
 }
