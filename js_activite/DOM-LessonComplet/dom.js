@@ -1,14 +1,22 @@
 /////////////////////// getElementById() ////////////////////////
 //document.getElementById("demo").innerHTML = "Hello world";
+let text1 =  document.querySelectorAll("p");
+
+console.log(text1);
+
 
 const firstP = document.getElementById("intro");
 document.getElementById("demo").innerHTML = "this word was taken from DOM " + firstP.innerHTML ;
+console.log(typeof firstP);
 
 /////////////////////// getElementsByTagName() //////////////
 
 const secondP = document.getElementsByTagName("p");
 document.getElementById("demo2").innerHTML = "this word was taken from DOM " +  secondP[0].innerHTML; // index value comes
 document.getElementById("demo3").innerHTML = "this word was taken from DOM " +  secondP[1].innerHTML;
+
+
+
 ////
 document.getElementById("last").innerHTML = "these are taken DOM" + "<br>" +
 firstP.innerHTML + " / " + secondP[1].innerHTML + " / " + secondP[2].innerHTML + " / "+ secondP[3].innerHTML ;
@@ -125,3 +133,9 @@ function myShape(){
 };
 
 
+document.querySelector("#color").onclick = ()=>{
+    document.querySelector("#color").style.backgroundColor = "red"
+};
+document.querySelector("#color").onmouseout = ()=>{
+    document.querySelector("#color").style.backgroundColor = "gray"
+};
