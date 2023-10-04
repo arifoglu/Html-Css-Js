@@ -100,16 +100,19 @@ window.onload = function(){
         },
      ];
     
-     let personList = document.querySelector("#tick");
-     console.log(personList);
-     personList.onclick = ()=>{
+     /////// we will show list in the Html page
+     let personList = document.querySelector("#show");
+     // console.log(personList);
+     personList.onmouseover = ()=>{
         document.querySelector("article").style.display = "block"
-     }
-
+     };
+     personList.onclick = ()=>{
+      document.querySelector("article").style.display = "none"
+     };
 
      ///////    we will find salary more than 5000
      let highSalaryPerson = families.filter((person)=> person.salary > 5000)
-                                    .map((person)=>    person.firstname + " " + person.lastname)
+                                    .map((person)=>    person.firstname + " " + person.lastname  + "<br> ")
      ;
      //console.log(highSalaryPerson);
     
@@ -133,7 +136,7 @@ window.onload = function(){
      let btn2 = document.querySelector("#buttonBoys");
      //console.log(btn2);
      btn2.onclick =()=>{
-        document.querySelector("#listBoy").innerHTML = boysChildren;
+        document.querySelector("#listBoy").innerHTML += boysChildren;
      };
      btn2.onmouseout =()=>{
         document.querySelector("#listBoy").innerHTML = " ";

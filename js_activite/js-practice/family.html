@@ -5,10 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family</title>
+    <style>
+      div{
+         border: 6px solid;
+         width: 450px;
+         text-align: center;
+         padding: 30px;
+         margin: auto;
+         background-color: rgb(239, 231, 222);
+         opacity: 0.7;
+      }
+      button{
+       
+         width: 200px;
+         height: 50px;
+         font-size: 20px;
+         border-radius: 6px;
+         background-color: rgb(206, 189, 168);
+      }
+      button:hover{
+         cursor: pointer;
+         background-color: rgb(207, 198, 186);
+      }
+      p{
+         font-size: 28px;
+      }
+     
+    </style>
 </head>
 <body>
     <div id="personList">
-        <input type="checkbox" name="" id="tick">
+        <button type="button" id="show">Person List</button>
         <article style="display: none;">
             families = [<br>
             {
@@ -118,19 +145,19 @@
         <p id="listSalary"></p>
     </div>
     <div id="top2">
-        <button id="buttonBoys">Boys kids Lists</button>
+        <button id="buttonBoys">Boys Kids</button>
         <p id="listBoy"></p>
     </div>
     <div id="top3">
-        <button id="buttonGirls">Girls kids Lists</button>
+        <button id="buttonGirls">Girls Kids</button>
         <p id="listGirls"></p>
     </div>
     <div id="top4">
-        <button id="buttonSmallAge">Kids List</button>
+        <button id="buttonSmallAge">Kids Age < 8</button>
         <p id="listSmallAge"></p>
     </div>
     <div id="top5">
-        <button id="buttonBigAge">Big kids List</button>
+        <button id="buttonBigAge">Kids Age > 8</button>
         <p id="listBigAge"></p>
     </div>
     <script src="family.js"></script>
