@@ -113,6 +113,16 @@ window.onload = function(){
         },  
     ];
     
+let fishListShow = document.getElementById("fishList");
+// console.log(fishListShow);
+fishListShow.onclick =()=>{
+    document.querySelector("div#container > div#right").style.display = "block"
+} ;
+document.querySelector("div#container > div#right").onmouseout = ()=>{
+    document.querySelector("div#container > div#right").style.display = "none";
+}
+
+
     // we will find total kilogram of the stock
     let total = 0;
     const stokList = fishFarm.map((kilo)=> kilo.stockVolumeInKg);
@@ -125,55 +135,70 @@ window.onload = function(){
     //console.log(btn1);
     btn1.onclick = ()=>{
         document.querySelector("#stockShow").innerHTML = total + " kg ";
+    };
+    btn1.onmouseout = ()=>{
+        document.querySelector("#stockShow").innerHTML = "";
     }
     
     //////// ???????????
     // we will find durable
-    const durable = fishFarm.filter((date)=> date.entryDate) 
-                            .sort()   
-    console.log(durable);
+    const durable = fishFarm.filter((date)=> date.durationInDays > 15  ) 
+                            .map((fish)=> fish.fishType + " " + fish.durationInDays + "day durable" + "<br>")   
+    //console.log(durable);
     
     let btn2 = document.querySelector("#durability");
     //console.log(btn1);
     btn2.onclick = ()=>{
-        document.querySelector("#durabilityShow").innerHTML = durable;
+        document.querySelector("#durabilityShow").innerHTML = durable.join("");
+    };
+    btn2.onmouseout = ()=>{
+        document.querySelector("#durabilityShow").innerHTML = "";
     };
     
     //
     // we will find price reasonable 
     const reasonablePrice = fishFarm.filter((prices)=> prices.price > 9 && prices.price<12)
-                                   .map((fish)=> fish.fishType);    
+                                   .map((fish)=> fish.fishType + "<br>");    
     //console.log(reasonablePrice);
     
     let btn3 = document.querySelector("#price");
     //console.log(btn1);
     btn3.onclick = ()=>{
-        document.querySelector("#reasonableShow").innerHTML = reasonablePrice;
+        document.querySelector("#reasonableShow").innerHTML = reasonablePrice.join("");
+    };
+    btn3.onmouseout = ()=>{
+        document.querySelector("#reasonableShow").innerHTML = " ";
     };
     
     //
     // we will find fish that can be eaten in winter in Vaud
     const winterfishVaud =fishFarm.filter((fish)=> fish.saleLocations = "VD" && fish.season == "Winter")
-                                  .map((fish)=> fish.fishType)
+                                  .map((fish)=> fish.fishType + "<br>")
     
     //console.log(winterfishVaud);
     
     let btn4 = document.querySelector("#winter");
     //console.log(btn4);
     btn4.onclick = ()=>{
-        document.querySelector("#winterFishShow").innerHTML = winterfishVaud;
+        document.querySelector("#winterFishShow").innerHTML = winterfishVaud.join("");
+    };
+    btn4.onmouseout = ()=>{
+        document.querySelector("#winterFishShow").innerHTML = "";
     };
 
     //
     // we will find fish that can be eaten in summer in Zurich
     const summerFishZurich = fishFarm.filter((fish)=> fish.saleLocations = "ZH" && fish.season == "Summer")
-                                     .map((fish)=> fish.fishType);   
+                                     .map((fish)=> fish.fishType + "<br>");   
     //console.log(summerFishZurich);
     
     let btn5 = document.querySelector("#summer");
     //console.log(btn5);
     btn5.onclick = ()=>{
-        document.querySelector("#summerFishShow").innerHTML = summerFishZurich;
+        document.querySelector("#summerFishShow").innerHTML = summerFishZurich.join("");
+    };
+    btn5.onmouseout = ()=>{
+        document.querySelector("#summerFishShow").innerHTML = " ";
     };
 
     //
@@ -181,13 +206,18 @@ window.onload = function(){
     
     const fishOrigin = fishFarm.filter((fish)=> fish.originCountry && fish.fishType)
                                .map((fish)=> fish.fishType + " from " + fish.originCountry + "<br>")
-                               
-    //console.log(fishOrigin);
+    ;
+  
+
+    // console.log(fishOrigin);
 
     let btn6 = document.querySelector("#origin");
     //console.log(btn6);
     btn6.onclick = ()=>{
-        document.querySelector("#fishOrigin").innerHTML = fishOrigin;
+        document.querySelector("#fishOrigin").innerHTML = fishOrigin.join("");
+    };
+    btn6.onmouseout = ()=>{
+        document.querySelector("#fishOrigin").innerHTML = " ";
     };
 
 
